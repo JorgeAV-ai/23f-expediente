@@ -1,0 +1,94 @@
+[
+  {
+    "id": "comm-gc-tejero",
+    "documentId": "doc-1-gc-tejero",
+    "title": "Conversacion Garcia Carres — Tejero",
+    "participants": [
+      { "label": "GC", "personId": "garcia-carres", "identifiedAs": "Garcia Carres" },
+      { "label": "T", "personId": "tejero", "identifiedAs": "Tcol. Tejero" }
+    ],
+    "date": "1981-02-23",
+    "timeEstimate": "~21:30",
+    "location": "Linea intervenida — Congreso de los Diputados",
+    "tapeReference": "Cinta GC-001",
+    "entries": [
+      {
+        "index": 0,
+        "speaker": "GC",
+        "text": "[Transcripcion pendiente — contenido del PDF escaneado]",
+        "isStageDirection": false,
+        "personsReferenced": [],
+        "timestamp": null
+      }
+    ]
+  },
+  {
+    "id": "comm-gc-unknown",
+    "documentId": "doc-2-gc",
+    "title": "Conversacion Garcia Carres — Interlocutor desconocido",
+    "participants": [
+      { "label": "GC", "personId": "garcia-carres", "identifiedAs": "Garcia Carres" },
+      { "label": "D", "personId": null, "identifiedAs": "Desconocido" }
+    ],
+    "date": "1981-02-23",
+    "timeEstimate": "~22:00",
+    "location": "Linea intervenida",
+    "tapeReference": "Cinta GC-002",
+    "entries": [
+      {
+        "index": 0,
+        "speaker": "GC",
+        "text": "[Transcripcion pendiente — contenido del PDF escaneado]",
+        "isStageDirection": false,
+        "personsReferenced": [],
+        "timestamp": null
+      }
+    ]
+  },
+  {
+    "id": "comm-el-pardo",
+    "documentId": "doc-3-el-pardo",
+    "title": "Conversaciones centralita El Pardo",
+    "participants": [
+      { "label": "OP", "personId": null, "identifiedAs": "Operadora El Pardo" },
+      { "label": "V", "personId": null, "identifiedAs": "Varios interlocutores" }
+    ],
+    "date": "1981-02-23",
+    "timeEstimate": "~23:00",
+    "location": "Centralita militar — El Pardo",
+    "tapeReference": "Cinta EP-001",
+    "entries": [
+      {
+        "index": 0,
+        "speaker": "OP",
+        "text": "[Transcripcion pendiente — contenido del PDF escaneado]",
+        "isStageDirection": false,
+        "personsReferenced": [],
+        "timestamp": null
+      }
+    ]
+  },
+  {
+    "id": "comm-esposa-tejero",
+    "documentId": "doc-6-esposa-tejero",
+    "title": "Conversacion esposa de Tejero",
+    "participants": [
+      { "label": "CT", "personId": "carmen-tejero", "identifiedAs": "Carmen (esposa de Tejero)" },
+      { "label": "D", "personId": null, "identifiedAs": "Interlocutor desconocido" }
+    ],
+    "date": "1981-02-23",
+    "timeEstimate": null,
+    "location": "Linea intervenida — domicilio Tejero",
+    "tapeReference": "Cinta CT-001",
+    "entries": [
+      {
+        "index": 0,
+        "speaker": "CT",
+        "text": "[Transcripcion pendiente — contenido del PDF escaneado]",
+        "isStageDirection": false,
+        "personsReferenced": [],
+        "timestamp": null
+      }
+    ]
+  }
+]

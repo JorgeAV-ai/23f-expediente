@@ -34,7 +34,7 @@ export default function ComunicacionesPage() {
         {communications.map((doc) => (
           <Link
             key={doc.id}
-            href={`/expediente/documentos/${doc.id}`}
+            href={`/expediente/comunicaciones/${doc.communicationId}`}
             className="document-card group flex items-start gap-4 rounded-sm border border-border/50 bg-card p-4 transition-all hover:border-amber/30 sm:gap-6 sm:p-6"
           >
             {/* Thumbnail */}

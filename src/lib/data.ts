@@ -3,6 +3,7 @@ import personsData from "@/data/persons.json";
 import eventsData from "@/data/events.json";
 import locationsData from "@/data/locations.json";
 import annotationsData from "@/data/annotations.json";
+import communicationsData from "@/data/communications.json";
 
 import type {
   Document,
@@ -10,6 +11,7 @@ import type {
   TimelineEvent,
   Location,
   Annotation,
+  Communication,
 } from "@/types";
 
 export const documents: Document[] = documentsData as Document[];
@@ -17,6 +19,11 @@ export const persons: Person[] = personsData as Person[];
 export const events: TimelineEvent[] = eventsData as TimelineEvent[];
 export const locations: Location[] = locationsData as Location[];
 export const annotations: Annotation[] = annotationsData as Annotation[];
+export const communications: Communication[] = communicationsData as Communication[];
+
+export function getCommunication(id: string): Communication | undefined {
+  return communications.find((c) => c.id === id);
+}
 
 export function getDocument(id: string): Document | undefined {
   return documents.find((d) => d.id === id);
