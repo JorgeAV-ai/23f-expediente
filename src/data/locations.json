@@ -1,0 +1,68 @@
+[
+  {
+    "id": "congress",
+    "name": "Palacio de las Cortes (Congreso de los Diputados)",
+    "shortName": "Congreso",
+    "coordinates": { "lat": 40.4161, "lng": -3.6967 },
+    "description": "Sede del Congreso de los Diputados, donde se estaba celebrando la votación de investidura de Leopoldo Calvo-Sotelo.",
+    "significance": "Epicentro del golpe. Tejero y ~200 guardias civiles irrumpieron durante la votación, reteniendo a los diputados como rehenes durante 18 horas.",
+    "eventsHere": ["evt-congress-assault", "evt-gc-tejero-call", "evt-cesid-agentes-congreso", "evt-armada-congress", "evt-surrender"],
+    "personsHere": ["tejero", "armada", "suarez", "gutierrez-mellado", "carrillo", "calvo-sotelo", "menendez", "pardo-zancada", "aramburu", "saenz-santa-maria"],
+    "type": "government"
+  },
+  {
+    "id": "el-pardo",
+    "name": "Unidad Militar de El Pardo",
+    "shortName": "El Pardo",
+    "coordinates": { "lat": 40.5179, "lng": -3.7741 },
+    "description": "Complejo militar al norte de Madrid, incluye acuartelamientos de diversas unidades.",
+    "significance": "Las conversaciones interceptadas en su centralita telefónica revelan el caos y la confusión de la noche del golpe en una base militar. El CESID montó aquí su centro de operaciones.",
+    "eventsHere": ["evt-cesid-operations-center", "evt-cesid-deployment"],
+    "personsHere": [],
+    "type": "military"
+  },
+  {
+    "id": "tve-prado-del-rey",
+    "name": "TVE Prado del Rey",
+    "shortName": "TVE",
+    "coordinates": { "lat": 40.3796, "lng": -3.7840 },
+    "description": "Sede de Televisión Española en Prado del Rey, Madrid.",
+    "significance": "Ocupada por tanques de la División Acorazada Brunete para controlar la emisión televisiva. Desde aquí se emitió el mensaje del Rey.",
+    "eventsHere": ["evt-tve-ocupada-descubrimiento", "evt-tve-occupation", "evt-tve-anuncia-mensaje", "evt-sabino-castedo-emision", "evt-king-speech"],
+    "personsHere": [],
+    "type": "media"
+  },
+  {
+    "id": "capitania-valencia",
+    "name": "Capitanía General de Valencia",
+    "shortName": "Capitanía Valencia",
+    "coordinates": { "lat": 39.4699, "lng": -0.3763 },
+    "description": "Sede del mando de la III Región Militar en Valencia.",
+    "significance": "Milans del Bosch declaró el estado de excepción desde aquí y ordenó que los tanques salieran a las calles de Valencia.",
+    "eventsHere": ["evt-valencia-tanks", "evt-telex-valencia-ordenes", "evt-milans-anula-bando"],
+    "personsHere": ["milans-del-bosch"],
+    "type": "military"
+  },
+  {
+    "id": "zarzuela",
+    "name": "Palacio de la Zarzuela",
+    "shortName": "La Zarzuela",
+    "coordinates": { "lat": 40.4767, "lng": -3.7578 },
+    "description": "Residencia oficial del Rey de España, en las afueras de Madrid.",
+    "significance": "Desde aquí el Rey Juan Carlos I coordinó la respuesta al golpe, contactando con los capitanes generales para asegurar su lealtad.",
+    "eventsHere": ["evt-zarzuela-radio", "evt-armada-calls-zarzuela", "evt-fernandez-campo-juste", "evt-rey-milans-call", "evt-decision-mensaje-tv", "evt-milans-contrasena-armada", "evt-fernandez-campo-tejero", "evt-rey-gabeiras-armada-call", "evt-telex-rey-capitanias", "evt-jujem-nota", "evt-sabino-armada-honor", "evt-king-calls", "evt-equipo-tve-zarzuela", "evt-grabacion-mensaje", "evt-video-sale-tve", "evt-rey-ordenes-milans", "evt-sabino-jujem-tejero-desobedece", "evt-juste-division-rey-milans"],
+    "personsHere": ["juan-carlos-i", "fernandez-campo"],
+    "type": "royal"
+  },
+  {
+    "id": "brunete-division",
+    "name": "División Acorazada Brunete Nº1",
+    "shortName": "DAC Brunete",
+    "coordinates": { "lat": 40.3953, "lng": -3.8867 },
+    "description": "Principal división acorazada del Ejército de Tierra, con base en las afueras de Madrid.",
+    "significance": "Unidades de esta división ocuparon TVE y otras instalaciones clave en Madrid. Su participación era fundamental para el éxito del golpe.",
+    "eventsHere": ["evt-villaviciosa-pavia"],
+    "personsHere": ["juste", "san-martin", "ibanez-ingles"],
+    "type": "military"
+  }
+]

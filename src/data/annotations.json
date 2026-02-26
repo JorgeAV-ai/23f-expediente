@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ann-1",
+    "targetType": "document",
+    "targetId": "cni-documento-1",
+    "targetEntryIndex": null,
+    "text": "Sabino Fernandez Campo era el Secretario General de la Casa de S.M. el Rey Juan Carlos I. Jugó un papel crucial la noche del 23-F coordinando las comunicaciones desde el Palacio de la Zarzuela, llamando directamente a Tejero para exigirle que depusiera su actitud y arrancando al General Armada la promesa de no actuar en nombre del Rey.",
+    "category": "historical-context",
+    "sources": ["Juicio 23-F, declaracion de Fernandez Campo", "Crónica del 23-F, Col. Santos Peralba"]
+  },
+  {
+    "id": "ann-2",
+    "targetType": "document",
+    "targetId": "cni-documento-1",
+    "targetEntryIndex": null,
+    "text": "Emilio Alonso Manglano fue el Director del CESID (Centro Superior de Informacion de la Defensa) desde 1981 hasta 1995. Nombrado por Calvo-Sotelo poco despues del golpe, sustituyó a Narcís Serra en las funciones de control de los servicios de inteligencia. Su nombramiento refleja la reorganizacion de los servicios tras el 23-F.",
+    "category": "historical-context",
+    "sources": ["BOE, nombramiento Alonso Manglano", "Pilar Urbano, 'Con la venia... yo indagué el 23-F'"]
+  },
+  {
+    "id": "ann-3",
+    "targetType": "document",
+    "targetId": "cni-documento-1",
+    "targetEntryIndex": null,
+    "text": "El 'Manifiesto de los 100' (o 'Colectivo Almendros') fue un documento publicado en noviembre de 1980 en el diario El Alcazar, firmado bajo pseudonimo colectivo, que reclamaba una intervencion militar para reconducir la situacion politica de España. Fue un claro precedente ideologico del golpe.",
+    "category": "historical-context",
+    "sources": ["El Alcazar, noviembre 1980", "Javier Cercas, 'Anatomía de un instante'"]
+  },
+  {
+    "id": "ann-4",
+    "targetType": "document",
+    "targetId": "cni-documento-1",
+    "targetEntryIndex": null,
+    "text": "Las tarjetas de visita que deletreaban T-E-J-E-R-O son una referencia a un episodio de la conspiracion previa: Tejero repartio tarjetas con letras individuales entre contactos militares como senal de coordinacion, un metodo rudimentario de comunicacion conspirativa que refleja la naturaleza artesanal de la trama.",
+    "category": "historical-context",
+    "sources": ["Testimonio judicial, Causa 2/81"]
+  },
+  {
+    "id": "ann-5",
+    "targetType": "document",
+    "targetId": "cni-documento-1",
+    "targetEntryIndex": null,
+    "text": "Este documento vincula directamente la Casa Real con los servicios de inteligencia. La carta de Fernandez Campo a Alonso Manglano incluye el guion de una reunion del Rey, lo que demuestra la estrecha coordinacion entre la Zarzuela y el CESID para monitorizar las amenazas golpistas.",
+    "category": "cross-reference",
+    "sources": ["Documento CNI n.º 1", "Documento CNI n.º 20"]
+  },
+  {
+    "id": "ann-6",
+    "targetType": "document",
+    "targetId": "cni-documento-5",
+    "targetEntryIndex": null,
+    "text": "El CESID (Centro Superior de Informacion de la Defensa) fue el servicio de inteligencia español entre 1977 y 2002. Dependia del Ministerio de Defensa y fue el predecesor del actual CNI (Centro Nacional de Inteligencia). Durante el 23-F, el CESID tuvo un papel ambiguo: parte de sus miembros colaboraron activamente con el golpe mientras la institucion en su conjunto afirmaba lealtad constitucional.",
+    "category": "historical-context",
+    "sources": ["Ley reguladora del CNI, 2002", "Informe Comision de Defensa, Congreso"]
+  },
+  {
+    "id": "ann-7",
+    "targetType": "document",
+    "targetId": "cni-documento-5",
+    "targetEntryIndex": null,
+    "text": "PREJUJEM era el nombre en clave del plan de operaciones de emergencia del CESID para situaciones de crisis institucional. Fue activado la noche del 23-F como protocolo de respuesta ante la toma del Congreso. El plan establecia la movilizacion de operativos del CESID y su despliegue en puntos estrategicos de Madrid.",
+    "category": "historical-context",
+    "sources": ["Documentacion interna CESID, desclasificada 2021"]
+  },
+  {
+    "id": "ann-8",
+    "targetType": "document",
+    "targetId": "cni-documento-5",
+    "targetEntryIndex": null,
+    "text": "La 'Alerta VERDE' era el nivel mas bajo de alerta operativa del CESID, indicando situacion de vigilancia reforzada sin despliegue de medios extraordinarios. La escala completa era: VERDE (vigilancia), AMARILLA (prevencion), NARANJA (movilizacion parcial) y ROJA (emergencia total). Que se mantuviera en VERDE durante las primeras horas del golpe ha sido motivo de controversia historica.",
+    "category": "historical-context",
+    "sources": ["Manual operativo CESID, ref. interna", "Declaracion ante la Comision de Defensa, 1996"]
+  },
+  {
+    "id": "ann-9",
+    "targetType": "document",
+    "targetId": "cni-documento-5",
+    "targetEntryIndex": null,
+    "text": "El informe menciona la presencia de dos operativos del CESID dentro del Congreso durante el asalto. Su identidad exacta y mision (si actuaban como observadores leales o como enlace con los golpistas) sigue siendo uno de los mayores interrogantes sin resolver del 23-F.",
+    "category": "historical-context",
+    "sources": ["Informe CESID n.º 5, desclasificado", "El Mundo, serie 'Los papeles del CESID', 1995"]
+  },
+  {
+    "id": "ann-10",
+    "targetType": "document",
+    "targetId": "cni-documento-5",
+    "targetEntryIndex": null,
+    "text": "Este informe de operaciones se cruza con el Documento CNI n.º 6, que detalla la participacion de la AOME (Agrupacion Operativa de Misiones Especiales). Ambos documentos, leidos conjuntamente, revelan la existencia de al menos dos cadenas de mando paralelas dentro del CESID la noche del golpe.",
+    "category": "cross-reference",
+    "sources": ["Documento CNI n.º 5", "Documento CNI n.º 6"]
+  },
+  {
+    "id": "ann-11",
+    "targetType": "document",
+    "targetId": "cni-documento-6",
+    "targetEntryIndex": null,
+    "text": "La AOME (Agrupacion Operativa de Misiones Especiales) era la unidad de operaciones clandestinas del CESID, encargada de misiones de inteligencia encubierta, contraespionaje y operaciones especiales. Estaba compuesta por agentes con adiestramiento militar de elite y operaba con alto grado de autonomia respecto al mando central del CESID.",
+    "category": "historical-context",
+    "sources": ["Estructura organica del CESID, desclasificada", "Francisco Medina, 'Las sombras del poder'"]
+  },
+  {
+    "id": "ann-12",
+    "targetType": "document",
+    "targetId": "cni-documento-6",
+    "targetEntryIndex": null,
+    "text": "El Comandante Jose Luis Cortina Prieto era el jefe de la AOME en febrero de 1981. Fue procesado en la Causa 2/81 como presunto colaborador del golpe, acusado de proporcionar apoyo logistico a Tejero. Fue absuelto por el Tribunal, aunque multiples indicios y testimonios posteriores apuntan a su participacion activa. Su absolución es una de las mayores controversias judiciales del 23-F.",
+    "category": "historical-context",
+    "sources": ["Sentencia Causa 2/81, Tribunal Supremo", "Pilar Urbano, 'Con la venia... yo indagué el 23-F'"]
+  },
+  {
+    "id": "ann-13",
+    "targetType": "document",
+    "targetId": "cni-documento-6",
+    "targetEntryIndex": null,
+    "text": "La 'Operacion Mister' era, segun diversas fuentes, la operacion de encubrimiento organizada por elementos del CESID para borrar las huellas de la implicacion de los servicios de inteligencia en el golpe. Incluiria la destruccion de documentos, la manipulacion de testimonios y la proteccion de agentes comprometidos. Su existencia nunca fue reconocida oficialmente.",
+    "category": "historical-context",
+    "sources": ["Jesus Palacios, '23-F: El golpe del CESID'", "Declaraciones de agentes retirados del CESID"]
+  },
+  {
+    "id": "ann-14",
+    "targetType": "document",
+    "targetId": "cni-documento-6",
+    "targetEntryIndex": null,
+    "text": "El informe menciona contactos de la AOME con el Embajador de Estados Unidos, Terence Todman, y con el Nuncio Apostolico (representante del Vaticano). Estos contactos diplomaticos durante la noche del golpe sugieren que los servicios de inteligencia estaban sondeando la reaccion internacional ante un posible cambio de gobierno, o bien buscando mediacion para la crisis.",
+    "category": "historical-context",
+    "sources": ["Documento CNI n.º 6, desclasificado", "Cables diplomaticos desclasificados, Departamento de Estado de EE.UU."]
+  },
+  {
+    "id": "ann-15",
+    "targetType": "document",
+    "targetId": "cni-documento-6",
+    "targetEntryIndex": null,
+    "text": "La participacion de la AOME descrita en este documento contrasta con el informe oficial de operaciones del CESID (Documento CNI n.º 5). Mientras el informe institucional presenta al CESID como leal espectador, este documento revela que su unidad mas operativa estaba actuando con objetivos propios.",
+    "category": "cross-reference",
+    "sources": ["Documento CNI n.º 5", "Documento CNI n.º 6"]
+  },
+  {
+    "id": "ann-16",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "La frase 'Esto cambia totalmente la situacion' fue pronunciada por el General Juste, Jefe de la Division Acorazada Brunete (DAC), al enterarse de que la orden de movilizacion no provenia del Rey sino de los golpistas. Juste habia movilizado inicialmente sus tropas creyendo que seguia ordenes reales. Esta frase marca el punto de inflexion en que la unidad militar mas poderosa de Madrid se desmarca del golpe.",
+    "category": "historical-context",
+    "sources": ["Declaracion del General Juste ante el Tribunal, Causa 2/81", "Documento CNI n.º 20"]
+  },
+  {
+    "id": "ann-17",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "La 'solucion Armada' era la propuesta del General Alfonso Armada de presentarse en el Congreso como emisario del Rey para formar un gobierno de concentracion o de gestion presidido por el propio Armada. Milans del Bosch y Tejero esperaban esta solucion como desenlace del golpe. El Rey la rechazo tajantemente cuando Armada intento proponersela por telefono.",
+    "category": "historical-context",
+    "sources": ["Sentencia Causa 2/81", "Javier Cercas, 'Anatomía de un instante'"]
+  },
+  {
+    "id": "ann-18",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "La orden del Rey a Milans del Bosch contenía 6 puntos concretos: (1) retirar los tanques de las calles de Valencia, (2) anular el bando de estado de excepcion, (3) regresar a los cuarteles, (4) acatar la Constitucion, (5) obedecer al Gobierno legitimo y (6) no contactar con otros capitanes generales para acciones fuera de la legalidad. Milans se resistio en varias llamadas antes de obedecer finalmente hacia las 02:00.",
+    "category": "historical-context",
+    "sources": ["Documento CNI n.º 20", "Declaracion de Fernandez Campo, Causa 2/81"]
+  },
+  {
+    "id": "ann-19",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "El Comandante Ricardo Pardo Zancada lideraba la columna de la Division Acorazada Brunete (DAC) que se desplazó al Congreso en autobuses, escapando al control de sus mandos superiores. Esta columna de unos 200 soldados reforzo a Tejero dentro del hemiciclo, representando la unica unidad del Ejercito de Tierra que se sumo fisicamente a la ocupacion del Congreso.",
+    "category": "historical-context",
+    "sources": ["Sentencia Causa 2/81", "Ricardo Pardo Zancada, '23-F: La pieza que falta'"]
+  },
+  {
+    "id": "ann-20",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "El Capitan Merlo dirigió la ocupacion de Television Espanola (TVE) en Prado del Rey con una columna de vehiculos blindados de la Division Acorazada. La toma de TVE impidio temporalmente que se emitieran noticias y retrasó la difusion del mensaje del Rey, que no pudo emitirse hasta la 01:14 de la madrugada.",
+    "category": "historical-context",
+    "sources": ["Documento CNI n.º 20", "Testimonio de tecnicos de TVE, Causa 2/81"]
+  },
+  {
+    "id": "ann-21",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "Este documento minuto a minuto constituye la fuente primaria mas completa sobre las acciones de la Zarzuela durante la noche del golpe. Se cruza directamente con el Documento CNI n.º 1, que contiene la carta de Fernandez Campo a Manglano, y con el Documento CNI n.º 21 sobre las actuaciones judiciales posteriores.",
+    "category": "cross-reference",
+    "sources": ["Documento CNI n.º 1", "Documento CNI n.º 20", "Documento CNI n.º 21"]
+  },
+  {
+    "id": "ann-22",
+    "targetType": "document",
+    "targetId": "cni-documento-21",
+    "targetEntryIndex": null,
+    "text": "La Causa 2/81 fue el procedimiento judicial por el intento de golpe de Estado del 23-F, instruido por el Consejo Supremo de Justicia Militar. Se juzgó a 33 acusados. El juicio oral se celebro entre febrero y junio de 1982 en el Servicio Geografico del Ejercito (Madrid). Fue el mayor juicio militar de la democracia española.",
+    "category": "historical-context",
+    "sources": ["Sentencia Causa 2/81, Consejo Supremo de Justicia Militar", "BOE, resolucion del Tribunal Supremo"]
+  },
+  {
+    "id": "ann-23",
+    "targetType": "document",
+    "targetId": "cni-documento-21",
+    "targetEntryIndex": null,
+    "text": "Los principales condenados fueron: Tcol. Antonio Tejero (30 anos), Gral. Jaime Milans del Bosch (30 anos) y Gral. Alfonso Armada (30 anos, reducida a 26). Tambien fueron condenados el Cte. Ricardo Pardo Zancada (12 anos), el Gral. Torres Rojas (12 anos) y otros militares con penas menores. El Cte. Cortina (CESID) fue absuelto, decision muy controvertida.",
+    "category": "historical-context",
+    "sources": ["Sentencia Causa 2/81", "Sentencia del Tribunal Supremo en revision"]
+  },
+  {
+    "id": "ann-24",
+    "targetType": "document",
+    "targetId": "cni-documento-21",
+    "targetEntryIndex": null,
+    "text": "El juicio revelo la existencia de al menos tres tramas golpistas convergentes: la trama militar dura (Milans-Tejero), la trama politica moderada ('solucion Armada') y la trama del CESID (Cortina y la AOME). La sentencia solo condeno las dos primeras, dejando sin esclarecer plenamente la tercera.",
+    "category": "historical-context",
+    "sources": ["Sentencia Causa 2/81", "Javier Cercas, 'Anatomía de un instante'"]
+  },
+  {
+    "id": "ann-25",
+    "targetType": "document",
+    "targetId": "cni-documento-21",
+    "targetEntryIndex": null,
+    "text": "El Documento CNI n.º 21 sobre las actuaciones judiciales complementa directamente la cronica de la Zarzuela (Documento CNI n.º 20) y el informe de la AOME (Documento CNI n.º 6). La lectura conjunta de estos tres documentos ofrece la vision mas completa de las distintas dimensiones del golpe: militar, institucional y de inteligencia.",
+    "category": "cross-reference",
+    "sources": ["Documento CNI n.º 6", "Documento CNI n.º 20", "Documento CNI n.º 21"]
+  },
+  {
+    "id": "ann-26",
+    "targetType": "person",
+    "targetId": "tejero",
+    "targetEntryIndex": null,
+    "text": "Tejero ya habia protagonizado un intento golpista anterior: la 'Operacion Galaxia' (noviembre de 1978), un plan para tomar el Palacio de la Moncloa durante un Consejo de Ministros. Fue condenado a solo 7 meses de prision, insuficiente para disuadirle de su activismo involucionista.",
+    "category": "historical-context",
+    "sources": ["Sentencia Operacion Galaxia, 1979", "gc-tejero-galaxia"]
+  },
+  {
+    "id": "ann-27",
+    "targetType": "person",
+    "targetId": "cortina",
+    "targetEntryIndex": null,
+    "text": "El Comandante Jose Luis Cortina fue el nexo entre los servicios de inteligencia y la trama golpista. Su unidad, la AOME, proporcionó vehiculos, documentacion falsa y apoyo logistico a Tejero segun multiples testimonios. Su absolucion en la Causa 2/81 fue revocada parcialmente por el Tribunal Supremo, que sin embargo tampoco pudo establecer una condena firme por falta de pruebas directas.",
+    "category": "cross-reference",
+    "sources": ["Documento CNI n.º 6", "Documento CNI n.º 7", "Sentencia Causa 2/81"]
+  },
+  {
+    "id": "ann-28",
+    "targetType": "document",
+    "targetId": "cni-documento-20",
+    "targetEntryIndex": null,
+    "text": "El relato minuto a minuto de la Zarzuela permite reconstruir el momento exacto en que el Rey tomo la decision de actuar: tras confirmar que Milans habia sacado los tanques en Valencia (sobre las 19:00) y que la Division Acorazada se movia en Madrid, Juan Carlos I inició personalmente las llamadas a los capitanes generales de las nueve regiones militares para asegurar su lealtad constitucional.",
+    "category": "historical-context",
+    "sources": ["Documento CNI n.º 20", "Declaracion de Fernandez Campo, Causa 2/81"]
+  }
+]

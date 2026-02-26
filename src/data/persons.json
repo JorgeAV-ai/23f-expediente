@@ -1,0 +1,1089 @@
+[
+  {
+    "id": "tejero",
+    "fullName": "Antonio Tejero Molina",
+    "displayName": "Tcol. Tejero",
+    "aliases": [
+      "Antonio",
+      "Juanillo"
+    ],
+    "role": "military-conspirator",
+    "rank": "teniente-coronel",
+    "unit": "Guardia Civil",
+    "bio": "Teniente Coronel de la Guardia Civil. Protagonista principal del golpe, lideró el asalto al Congreso de los Diputados con un grupo de guardias civiles armados.",
+    "significance": "Entró pistola en mano al hemiciclo del Congreso gritando '¡Quieto todo el mundo!' y '¡Al suelo!', reteniendo a los diputados durante horas.",
+    "documentsAppearingIn": [
+      "doc-1-gc-tejero",
+      "doc-3-el-pardo",
+      "doc-6-esposa-tejero",
+      "gc-oficio-pais-vasco-tejero",
+      "gc-prensa-arresto-tejero",
+      "gc-tejero-galaxia",
+      "cni-documento-1",
+      "cni-documento-5",
+      "cni-documento-7",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [
+      "comm-gc-tejero",
+      "comm-esposa-tejero"
+    ],
+    "connections": [
+      {
+        "personId": "garcia-carres",
+        "relationshipType": "co-conspirator",
+        "description": "Contacto telefónico durante la noche del golpe",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero"
+        ]
+      },
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "co-conspirator",
+        "description": "Coordinación militar con Valencia",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero"
+        ]
+      },
+      {
+        "personId": "armada",
+        "relationshipType": "co-conspirator",
+        "description": "Supuesto jefe político de la operación",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero",
+          "doc-2-gc"
+        ]
+      },
+      {
+        "personId": "carmen-tejero",
+        "relationshipType": "spouse",
+        "description": "Esposa de Tejero",
+        "evidenceDocIds": [
+          "doc-6-esposa-tejero"
+        ]
+      },
+      {
+        "personId": "fernandez-campo",
+        "relationshipType": "contacted-during-coup",
+        "description": "Fernández Campo le llamó exigiendo deponer su actitud",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "pardo-zancada",
+        "relationshipType": "co-conspirator",
+        "description": "Pardo Zancada lideró la columna de la DAC que se unió a Tejero en el Congreso",
+        "evidenceDocIds": [
+          "cni-documento-20",
+          "cni-documento-21"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/tejero.jpg"
+  },
+  {
+    "id": "garcia-carres",
+    "fullName": "Juan García Carrés",
+    "displayName": "García Carrés",
+    "aliases": [
+      "G.C.",
+      "Juanillo",
+      "Juan"
+    ],
+    "role": "civilian-conspirator",
+    "rank": null,
+    "unit": null,
+    "bio": "Sindicalista de extrema derecha y excombatiente de la División Azul. Actuó como intermediario civil clave entre los conspiradores militares.",
+    "significance": "Fue el enlace telefónico principal durante la noche del golpe, retransmitiendo información entre los distintos focos conspirativos y animando a Tejero a resistir.",
+    "documentsAppearingIn": [
+      "doc-1-gc-tejero",
+      "doc-2-gc",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [
+      "comm-gc-tejero",
+      "comm-gc-unknown"
+    ],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Contacto directo por teléfono durante el golpe",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero"
+        ]
+      },
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "intermediary",
+        "description": "Transmitió información de Milans a Tejero",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": "/images/persons/garcia-carres.jpg"
+  },
+  {
+    "id": "milans-del-bosch",
+    "fullName": "Jaime Milans del Bosch y Ussía",
+    "displayName": "Milans del Bosch",
+    "aliases": [
+      "Milans"
+    ],
+    "role": "military-conspirator",
+    "rank": "teniente-general",
+    "unit": "III Región Militar (Valencia)",
+    "bio": "Teniente General y Capitán General de la III Región Militar (Valencia). Sacó los tanques a las calles de Valencia y declaró el estado de excepción.",
+    "significance": "Fue el único capitán general que se sumó abiertamente al golpe, desplegando tanques por Valencia. Se retractó tras el mensaje televisado del Rey.",
+    "documentsAppearingIn": [
+      "doc-1-gc-tejero",
+      "doc-4-planificacion",
+      "doc-6-esposa-tejero",
+      "cni-documento-5",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [
+      "comm-gc-tejero"
+    ],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Coordinación de la operación militar",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero"
+        ]
+      },
+      {
+        "personId": "armada",
+        "relationshipType": "co-conspirator",
+        "description": "Parte del triángulo conspirador principal",
+        "evidenceDocIds": [
+          "doc-4-planificacion"
+        ]
+      },
+      {
+        "personId": "fernandez-campo",
+        "relationshipType": "contacted-during-coup",
+        "description": "Múltiples conversaciones con Fernández Campo durante la noche del golpe",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "juan-carlos-i",
+        "relationshipType": "contacted-during-coup",
+        "description": "El Rey le ordenó por teléfono retirar las tropas y anular el bando",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "capitania-valencia"
+    ],
+    "imagePath": "/images/persons/milans-del-bosch.jpg"
+  },
+  {
+    "id": "armada",
+    "fullName": "Alfonso Armada Comyn",
+    "displayName": "General Armada",
+    "aliases": [
+      "Armada"
+    ],
+    "role": "military-conspirator",
+    "rank": "general",
+    "unit": "Estado Mayor del Ejército",
+    "bio": "General del Ejército y antiguo secretario de la Casa Real. Se presentó como la figura que presidiría el gobierno resultante del golpe.",
+    "significance": "Considerado el cerebro político del golpe. Se presentó en el Congreso pretendiendo ser la solución, pero su propuesta de gobierno fue rechazada por Tejero.",
+    "documentsAppearingIn": [
+      "doc-1-gc-tejero",
+      "doc-2-gc",
+      "doc-4-planificacion",
+      "cni-documento-5",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [
+      "comm-gc-tejero",
+      "comm-gc-unknown"
+    ],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Cabeza política del golpe",
+        "evidenceDocIds": [
+          "doc-1-gc-tejero"
+        ]
+      },
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "co-conspirator",
+        "description": "Triángulo conspirador",
+        "evidenceDocIds": [
+          "doc-4-planificacion"
+        ]
+      },
+      {
+        "personId": "fernandez-campo",
+        "relationshipType": "contacted-during-coup",
+        "description": "Fernández Campo le arrancó palabra de honor de no actuar en nombre del Rey",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "juan-carlos-i",
+        "relationshipType": "contacted-during-coup",
+        "description": "El Rey rechazó su pretensión de ir a Zarzuela; conversación muy tensa",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/armada.jpg"
+  },
+  {
+    "id": "carmen-tejero",
+    "fullName": "Carmen (esposa de Tejero)",
+    "displayName": "Carmen de Tejero",
+    "aliases": [
+      "Carmen"
+    ],
+    "role": "family-member",
+    "rank": null,
+    "unit": null,
+    "bio": "Esposa del Teniente Coronel Tejero. Durante la noche del golpe intentó desesperadamente contactar con su marido a través de la Guardia Civil y otros canales.",
+    "significance": "Sus conversaciones telefónicas interceptadas revelan el lado humano del golpe: la desesperación de una mujer que no puede hablar con su marido atrapado en el Congreso.",
+    "documentsAppearingIn": [
+      "doc-6-esposa-tejero",
+      "doc-1-gc-tejero"
+    ],
+    "communicationsAppearingIn": [
+      "comm-esposa-tejero"
+    ],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "spouse",
+        "description": "Esposa",
+        "evidenceDocIds": [
+          "doc-6-esposa-tejero"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": null
+  },
+  {
+    "id": "juan-carlos-i",
+    "fullName": "Juan Carlos I de España",
+    "displayName": "Rey Juan Carlos I",
+    "aliases": [
+      "El Rey",
+      "Su Majestad",
+      "S.M."
+    ],
+    "role": "monarch",
+    "rank": null,
+    "unit": "Corona de España",
+    "bio": "Rey de España en 1981. Jefe de Estado y mando supremo de las Fuerzas Armadas según la Constitución de 1978.",
+    "significance": "Su intervención televisada a las 01:14 del 24 de febrero, uniformado y ordenando a los militares regresar a sus cuarteles, fue decisiva para el fracaso del golpe.",
+    "documentsAppearingIn": [
+      "doc-4-planificacion",
+      "cni-documento-1",
+      "cni-documento-5",
+      "cni-documento-14",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "fernandez-campo",
+        "relationshipType": "political-ally",
+        "description": "Secretario General de la Casa Real, su principal asesor durante la crisis",
+        "evidenceDocIds": [
+          "cni-documento-1",
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "contacted-during-coup",
+        "description": "Le ordenó directamente retirar las tropas por teléfono",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "armada",
+        "relationshipType": "contacted-during-coup",
+        "description": "Rechazó sus pretensiones y le prohibió ir a Zarzuela",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "zarzuela"
+    ],
+    "imagePath": "/images/persons/juan-carlos-i.jpg"
+  },
+  {
+    "id": "general-fajardo",
+    "fullName": "General Fajardo",
+    "displayName": "General Fajardo",
+    "aliases": [
+      "Fajardo"
+    ],
+    "role": "military-loyal",
+    "rank": "general",
+    "unit": "Guardia Civil",
+    "bio": "General de la Guardia Civil que se mantuvo leal al orden constitucional durante la noche del golpe.",
+    "significance": "Fue contactado por la esposa de Tejero buscando información. Se mantuvo en el cuartel sin sumarse al golpe.",
+    "documentsAppearingIn": [
+      "doc-6-esposa-tejero"
+    ],
+    "communicationsAppearingIn": [
+      "comm-esposa-tejero"
+    ],
+    "connections": [
+      {
+        "personId": "carmen-tejero",
+        "relationshipType": "contacted-during-coup",
+        "description": "Contactado por Carmen buscando información sobre Tejero",
+        "evidenceDocIds": [
+          "doc-6-esposa-tejero"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": null
+  },
+  {
+    "id": "suarez",
+    "fullName": "Adolfo Suárez González",
+    "displayName": "Adolfo Suárez",
+    "aliases": [
+      "Suárez",
+      "Presidente Suárez"
+    ],
+    "role": "political-figure",
+    "rank": null,
+    "unit": null,
+    "bio": "Presidente del Gobierno de España entre 1976 y 1981. Artífice de la Transición democrática. Había dimitido el 29 de enero de 1981 y se encontraba en el Congreso como presidente en funciones durante la votación de investidura de Calvo-Sotelo.",
+    "significance": "Permaneció sentado en su escaño durante el asalto, con dignidad y sin agacharse ante los disparos de Tejero. Su actitud simbolizó la resistencia civil al golpe junto a Gutiérrez Mellado y Carrillo.",
+    "documentsAppearingIn": [
+      "doc-4-planificacion",
+      "cni-documento-5",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "gutierrez-mellado",
+        "relationshipType": "political-ally",
+        "description": "Su Vicepresidente, se enfrentó físicamente a los golpistas en el hemiciclo",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      },
+      {
+        "personId": "calvo-sotelo",
+        "relationshipType": "political-ally",
+        "description": "Su sucesor designado como Presidente del Gobierno",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/suarez.jpg"
+  },
+  {
+    "id": "gutierrez-mellado",
+    "fullName": "Manuel Gutiérrez Mellado",
+    "displayName": "Gral. Gutiérrez Mellado",
+    "aliases": [
+      "Gutiérrez Mellado",
+      "Guti"
+    ],
+    "role": "political-figure",
+    "rank": "teniente-general",
+    "unit": "Gobierno de España",
+    "bio": "Teniente General y Vicepresidente Primero del Gobierno para Asuntos de la Defensa. Militar reformista que impulsó la modernización de las Fuerzas Armadas durante la Transición.",
+    "significance": "Se levantó de su escaño y se enfrentó físicamente a los guardias civiles que asaltaron el Congreso, intentando detenerles. Fue derribado pero mantuvo su dignidad. Imagen icónica del 23-F.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "suarez",
+        "relationshipType": "political-ally",
+        "description": "Vicepresidente del gobierno de Suárez",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      },
+      {
+        "personId": "tejero",
+        "relationshipType": "contacted-during-coup",
+        "description": "Se enfrentó a los asaltantes en el hemiciclo",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/gutierrez-mellado.jpg"
+  },
+  {
+    "id": "carrillo",
+    "fullName": "Santiago Carrillo Solares",
+    "displayName": "Santiago Carrillo",
+    "aliases": [
+      "Carrillo"
+    ],
+    "role": "political-figure",
+    "rank": null,
+    "unit": null,
+    "bio": "Secretario General del Partido Comunista de España (PCE). Figura clave de la Transición al aceptar la monarquía y la bandera española, facilitando la reconciliación nacional.",
+    "significance": "Permaneció sentado y fumando con calma durante el asalto al Congreso, sin agacharse ante los disparos. Su serenidad junto a la de Suárez y Gutiérrez Mellado se convirtió en símbolo de la resistencia democrática.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-20"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "suarez",
+        "relationshipType": "political-ally",
+        "description": "Aliados en defensa de la democracia durante el asalto",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/carrillo.jpg"
+  },
+  {
+    "id": "calvo-sotelo",
+    "fullName": "Leopoldo Calvo-Sotelo y Bustelo",
+    "displayName": "Calvo-Sotelo",
+    "aliases": [
+      "Calvo Sotelo"
+    ],
+    "role": "political-figure",
+    "rank": null,
+    "unit": null,
+    "bio": "Político de la UCD. Candidato a Presidente del Gobierno en la votación de investidura que se celebraba cuando Tejero asaltó el Congreso el 23-F.",
+    "significance": "Estaba siendo votado como nuevo Presidente del Gobierno en el momento exacto del asalto. Fue finalmente investido el 25 de febrero de 1981, dos días después del golpe frustrado.",
+    "documentsAppearingIn": [
+      "cni-documento-20"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "suarez",
+        "relationshipType": "political-ally",
+        "description": "Sucesor designado por Suárez como candidato a la Presidencia",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/calvo-sotelo.jpg"
+  },
+  {
+    "id": "fernandez-campo",
+    "fullName": "Sabino Fernández Campo",
+    "displayName": "Fernández Campo",
+    "aliases": [
+      "Sabino",
+      "SABINO"
+    ],
+    "role": "civilian-involved",
+    "rank": null,
+    "unit": "Casa de S.M. El Rey",
+    "bio": "Secretario General de la Casa de Su Majestad el Rey. Fue la mano derecha de Juan Carlos I durante la crisis del 23-F, coordinando las comunicaciones desde el Palacio de la Zarzuela.",
+    "significance": "Pieza clave en la defensa de la democracia. Coordinó las llamadas del Rey a los capitanes generales, llamó directamente a Tejero exigiéndole deponer su actitud, y arrancó al General Armada la promesa de no actuar en nombre del Rey.",
+    "documentsAppearingIn": [
+      "cni-documento-1",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "juan-carlos-i",
+        "relationshipType": "political-ally",
+        "description": "Secretario General de la Casa Real, su principal asesor",
+        "evidenceDocIds": [
+          "cni-documento-1",
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "alonso-manglano",
+        "relationshipType": "political-ally",
+        "description": "Le remitió documentación por indicación del Rey",
+        "evidenceDocIds": [
+          "cni-documento-1"
+        ]
+      },
+      {
+        "personId": "tejero",
+        "relationshipType": "contacted-during-coup",
+        "description": "Le llamó al Congreso exigiéndole deponer su actitud",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "armada",
+        "relationshipType": "contacted-during-coup",
+        "description": "Le arrancó palabra de honor de no actuar en nombre del Rey",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "contacted-during-coup",
+        "description": "Múltiples conversaciones telefónicas durante la noche",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "zarzuela"
+    ],
+    "imagePath": "/images/persons/fernandez-campo.jpg"
+  },
+  {
+    "id": "alonso-manglano",
+    "fullName": "Emilio Alonso Manglano",
+    "displayName": "Alonso Manglano",
+    "aliases": [
+      "Manglano",
+      "Emilio"
+    ],
+    "role": "civilian-involved",
+    "rank": null,
+    "unit": "CESID (Centro Superior de Información de la Defensa)",
+    "bio": "Director del CESID (Centro Superior de Información de la Defensa, antecesor del actual CNI) desde 1981. Militar de carrera que dirigió la reestructuración del servicio de inteligencia tras el 23-F.",
+    "significance": "Destinatario de la carta personal y reservada de Sabino Fernández Campo con el guión del Rey para la reunión con los Jefes de Estado Mayor. Dirigió el CESID en el periodo posterior al golpe.",
+    "documentsAppearingIn": [
+      "cni-documento-1"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "fernandez-campo",
+        "relationshipType": "political-ally",
+        "description": "Recibió correspondencia reservada de Fernández Campo",
+        "evidenceDocIds": [
+          "cni-documento-1"
+        ]
+      },
+      {
+        "personId": "juan-carlos-i",
+        "relationshipType": "political-ally",
+        "description": "Recibió documentación por indicación directa del Rey",
+        "evidenceDocIds": [
+          "cni-documento-1"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": "/images/persons/alonso-manglano.jpg"
+  },
+  {
+    "id": "cortina",
+    "fullName": "José Luis Cortina Prieto",
+    "displayName": "Cte. Cortina",
+    "aliases": [
+      "Cortina"
+    ],
+    "role": "military-conspirator",
+    "rank": "comandante",
+    "unit": "AOME (CESID)",
+    "bio": "Comandante del Ejército de Tierra y jefe de la AOME (Agrupación Operativa de Misiones Especiales), unidad operativa secreta del CESID. Procesado y absuelto en el juicio del 23-F.",
+    "significance": "Dirigía la unidad del CESID cuyos agentes proporcionaron apoyo operativo a la columna que asaltó el Congreso. Aunque no se probó su conocimiento previo, hay indicios de que lo sabía. Activó la 'Operación Míster' el 24-F para encubrir los movimientos.",
+    "documentsAppearingIn": [
+      "cni-documento-6",
+      "cni-documento-7",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Agentes bajo su mando apoyaron la columna de Tejero",
+        "evidenceDocIds": [
+          "cni-documento-6"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": "/images/persons/cortina.jpg"
+  },
+  {
+    "id": "torres-rojas",
+    "fullName": "Luis Torres Rojas",
+    "displayName": "Gral. Torres Rojas",
+    "aliases": [
+      "Torres Rojas"
+    ],
+    "role": "military-conspirator",
+    "rank": "general",
+    "unit": "División Acorazada Brunete n.º 1",
+    "bio": "General de División. Estaba previsto que liderase la División Acorazada Brunete en la operación del golpe, pero había sido relevado del mando de la DAC antes del 23-F. Procesado y condenado.",
+    "significance": "Era la pieza militar clave prevista para controlar Madrid con los tanques de la Brunete. Su relevo del mando de la DAC obligó a los conspiradores a improvisar con el General Juste.",
+    "documentsAppearingIn": [
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "co-conspirator",
+        "description": "Parte del plan militar del golpe",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      },
+      {
+        "personId": "armada",
+        "relationshipType": "co-conspirator",
+        "description": "Vinculado al plan de Armada",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": null
+  },
+  {
+    "id": "san-martin",
+    "fullName": "José Ignacio San Martín López",
+    "displayName": "Tcol. San Martín",
+    "aliases": [
+      "Sanmartín",
+      "San Martín",
+      "Sanmartin"
+    ],
+    "role": "military-conspirator",
+    "rank": "teniente-coronel",
+    "unit": "División Acorazada Brunete n.º 1",
+    "bio": "Teniente Coronel del Estado Mayor de la División Acorazada Brunete. Participó activamente en la planificación y coordinación de la salida de unidades de la DAC la noche del 23-F. Procesado en el juicio.",
+    "significance": "Como el más antiguo de los procesados de la DAC, asumió la representación de los militares de la División en el juicio. Afirmó que 'los que decidieron participar en el 23-F lo hicieron convencidos de que era necesario'.",
+    "documentsAppearingIn": [
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "armada",
+        "relationshipType": "co-conspirator",
+        "description": "Creía actuar bajo la autorización del Rey a través de Armada",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      },
+      {
+        "personId": "pardo-zancada",
+        "relationshipType": "co-conspirator",
+        "description": "Compañeros en el Estado Mayor de la DAC",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "brunete-division"
+    ],
+    "imagePath": "/images/persons/san-martin.jpg"
+  },
+  {
+    "id": "ibanez-ingles",
+    "fullName": "Diego Ibáñez Inglés",
+    "displayName": "Cor. Ibáñez Inglés",
+    "aliases": [
+      "Ibáñez",
+      "Ibañez"
+    ],
+    "role": "military-conspirator",
+    "rank": "coronel",
+    "unit": "División Acorazada Brunete n.º 1",
+    "bio": "Coronel de la División Acorazada Brunete. Lideró la salida de tanques desde la base de la DAC hacia Madrid la noche del 23-F. Procesado en el juicio.",
+    "significance": "Fue el mando directo de las unidades blindadas que salieron de la DAC Brunete. En el juicio invocó su lealtad y fe en los generales Milans y Armada como motivo de su actuación.",
+    "documentsAppearingIn": [
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "subordinate",
+        "description": "Actuó creyendo obedecer órdenes avaladas por Milans",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      },
+      {
+        "personId": "armada",
+        "relationshipType": "subordinate",
+        "description": "Creyó en la legitimidad de la operación por confianza en Armada",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "brunete-division"
+    ],
+    "imagePath": null
+  },
+  {
+    "id": "pardo-zancada",
+    "fullName": "Ricardo Pardo Zancada",
+    "displayName": "Cte. Pardo Zancada",
+    "aliases": [
+      "Pardo Zancada",
+      "Pardo"
+    ],
+    "role": "military-conspirator",
+    "rank": "comandante",
+    "unit": "División Acorazada Brunete n.º 1",
+    "bio": "Comandante de Infantería de la División Acorazada Brunete. Lideró la columna de la Policía Militar de la DAC que entró en el Congreso para reforzar a Tejero.",
+    "significance": "Se le 'escapó' del control del General Juste y condujo unidades de la DAC al Congreso. Fue uno de los últimos en rendirse. En el juicio asumió toda la responsabilidad de sus subordinados.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Entró en el Congreso para reforzar la posición de Tejero",
+        "evidenceDocIds": [
+          "cni-documento-5",
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "san-martin",
+        "relationshipType": "co-conspirator",
+        "description": "Compañeros en la DAC, coordinaron la salida de unidades",
+        "evidenceDocIds": [
+          "cni-documento-21"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress",
+      "brunete-division"
+    ],
+    "imagePath": "/images/persons/pardo-zancada.jpg"
+  },
+  {
+    "id": "saenz-de-ynestrillas",
+    "fullName": "Ricardo Sáenz de Ynestrillas Martínez",
+    "displayName": "Cap. Sáenz de Ynestrillas",
+    "aliases": [
+      "Sáenz de Ynestrillas",
+      "Ynestrillas"
+    ],
+    "role": "military-conspirator",
+    "rank": "capitan",
+    "unit": "Ejército de Tierra",
+    "bio": "Capitán del Ejército implicado en la planificación del 23-F. Hijo del fiscal militar José Antonio Sáenz de Ynestrillas. Posteriormente vinculado a actividades de extrema derecha.",
+    "significance": "Participó en la planificación del asalto al Congreso, coordinando aspectos logísticos de la operación con otros conspiradores militares.",
+    "documentsAppearingIn": [
+      "doc-4-planificacion"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Colaboró en la planificación del golpe",
+        "evidenceDocIds": [
+          "doc-4-planificacion"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": "/images/persons/saenz-de-ynestrillas.jpg"
+  },
+  {
+    "id": "quintana-lacaci",
+    "fullName": "Guillermo Quintana Lacaci",
+    "displayName": "Gral. Quintana Lacaci",
+    "aliases": [
+      "Quintana Lacaci",
+      "Quintana"
+    ],
+    "role": "military-loyal",
+    "rank": "teniente-general",
+    "unit": "I Región Militar (Madrid)",
+    "bio": "Teniente General y Capitán General de la I Región Militar (Madrid) durante el 23-F. Mantuvo una posición ambigua durante las primeras horas del golpe pero finalmente se mantuvo leal a la Constitución.",
+    "significance": "Su actitud durante la noche del golpe fue decisiva: como Capitán General de Madrid, tenía autoridad sobre la DAC Brunete y otras unidades clave. El CESID mantuvo contacto permanente con él.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-20"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "juan-carlos-i",
+        "relationshipType": "contacted-during-coup",
+        "description": "El Rey contactó con él para conocer la situación en Madrid",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": "/images/persons/quintana-lacaci.jpg"
+  },
+  {
+    "id": "crespo-cuspinera",
+    "fullName": "Teniente Coronel Crespo Cuspinera",
+    "displayName": "Tcol. Crespo Cuspinera",
+    "aliases": [
+      "Crespo Cuspinera",
+      "Crespo"
+    ],
+    "role": "military-conspirator",
+    "rank": "teniente-coronel",
+    "unit": "Ejército de Tierra",
+    "bio": "Teniente Coronel implicado en la trama del 23-F. En su domicilio se encontraron documentos manuscritos de planificación del golpe con referencias al 'Plan Previo' y la 'Operación HALCÓN'.",
+    "significance": "El registro de su domicilio proporcionó pruebas documentales clave de la planificación previa del golpe: listas de generales, regiones militares con apoyos, y detalles operativos.",
+    "documentsAppearingIn": [
+      "doc-5-manuscrito"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "milans-del-bosch",
+        "relationshipType": "co-conspirator",
+        "description": "Los documentos encontrados en su domicilio incluían planes vinculados a la trama",
+        "evidenceDocIds": [
+          "doc-5-manuscrito"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "other"
+    ],
+    "imagePath": null
+  },
+  {
+    "id": "menendez",
+    "fullName": "Camilo Menéndez Vives",
+    "displayName": "Cor. Menéndez",
+    "aliases": [
+      "Menéndez",
+      "Menendez"
+    ],
+    "role": "military-conspirator",
+    "rank": "coronel",
+    "unit": "Armada (Marina)",
+    "bio": "Capitán de Navío procesado por su participación en el 23-F. Entró voluntariamente en el Congreso con Tejero por amistad con él.",
+    "significance": "Fue al Congreso por voluntad propia y su amistad con Tejero. En el juicio afirmó que no fue engañado por nadie y que no se arrepentía de su actuación.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "co-conspirator",
+        "description": "Entró voluntariamente en el Congreso por amistad con Tejero",
+        "evidenceDocIds": [
+          "cni-documento-5",
+          "cni-documento-21"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/menendez.jpg"
+  },
+  {
+    "id": "aramburu",
+    "fullName": "José Luis Aramburu Topete",
+    "displayName": "Gral. Aramburu",
+    "aliases": [
+      "Aramburu"
+    ],
+    "role": "military-loyal",
+    "rank": "general",
+    "unit": "Dirección General de la Guardia Civil",
+    "bio": "Director General de la Guardia Civil durante el 23-F. Se mantuvo leal al orden constitucional e intentó negociar con Tejero para que depusiera su actitud.",
+    "significance": "Intentó parlamentar con Tejero en el Congreso. A través del CESID conoció la llegada de las unidades de la DAC a las inmediaciones del Congreso, cuya orden de intervenir desconocía.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "tejero",
+        "relationshipType": "contacted-during-coup",
+        "description": "Intentó parlamentar con Tejero en el Congreso",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      },
+      {
+        "personId": "saenz-santa-maria",
+        "relationshipType": "political-ally",
+        "description": "Coordinó con Sáenz de Santa María las gestiones de parlamento",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/aramburu.jpg"
+  },
+  {
+    "id": "saenz-santa-maria",
+    "fullName": "José Antonio Sáenz de Santa María",
+    "displayName": "Gral. Sáenz de Santa María",
+    "aliases": [
+      "Sáenz de Santa María",
+      "Saenz de Santa Maria"
+    ],
+    "role": "military-loyal",
+    "rank": "general",
+    "unit": "Guardia Civil",
+    "bio": "General de la Guardia Civil que intervino en las negociaciones para la rendición de los asaltantes del Congreso. Se mantuvo leal al orden constitucional.",
+    "significance": "Participó en los intentos de parlamento en el Congreso junto al General Aramburu y el General Armada. Su actuación contribuyó a la resolución pacífica del golpe.",
+    "documentsAppearingIn": [
+      "cni-documento-5",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "aramburu",
+        "relationshipType": "political-ally",
+        "description": "Coordinó las gestiones de parlamento con Aramburu",
+        "evidenceDocIds": [
+          "cni-documento-5"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "congress"
+    ],
+    "imagePath": "/images/persons/saenz-santa-maria.jpg"
+  },
+  {
+    "id": "juste",
+    "fullName": "José Juste Fernández",
+    "displayName": "Gral. Juste",
+    "aliases": [
+      "Juste"
+    ],
+    "role": "military-conspirator",
+    "rank": "general",
+    "unit": "División Acorazada Brunete n.º 1",
+    "bio": "General jefe de la División Acorazada Brunete n.º 1. Dio las órdenes de acuartelamiento y alerta de la División la noche del 23-F. Procesado en el juicio.",
+    "significance": "Preguntó insistentemente si Armada estaba en Zarzuela. Cuando Fernández Campo le dijo que no, respondió: 'Esto cambia totalmente la situación'. No pudo controlar al Comandante Pardo Zancada que se le 'escapó' hacia el Congreso.",
+    "documentsAppearingIn": [
+      "cni-documento-20",
+      "cni-documento-21"
+    ],
+    "communicationsAppearingIn": [],
+    "connections": [
+      {
+        "personId": "armada",
+        "relationshipType": "co-conspirator",
+        "description": "Preguntó insistentemente si Armada estaba en Zarzuela",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "pardo-zancada",
+        "relationshipType": "superior",
+        "description": "Pardo Zancada se le 'escapó' con la unidad de PM hacia el Congreso",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      },
+      {
+        "personId": "fernandez-campo",
+        "relationshipType": "contacted-during-coup",
+        "description": "Contacto telefónico con Fernández Campo durante la crisis",
+        "evidenceDocIds": [
+          "cni-documento-20"
+        ]
+      }
+    ],
+    "locationsDuring23F": [
+      "brunete-division"
+    ],
+    "imagePath": "/images/persons/juste.jpg"
+  }
+]
