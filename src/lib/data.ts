@@ -101,3 +101,20 @@ export function getAnnotationCount(targetId: string): number {
   return annotations.filter((a) => a.targetId === targetId).length;
 }
 
+export function getEventsByDocument(docId: string): TimelineEvent[] {
+  const doc = getDocument(docId);
+  if (!doc || !doc.eventsReferenced) return [];
+  return events.filter((e) => doc.eventsReferenced.includes(e.id));
+}
+
+export function getDocumentNeighbors(docId: string): {
+  prev: Document | null;
+  next: Document | null;
+} {
+  const idx = documents.findIndex((d) => d.id === docId);
+  return {
+    prev: idx > 0 ? documents[idx - 1] : null,
+    next: idx < documents.length - 1 ? documents[idx + 1] : null,
+  };
+}
+
