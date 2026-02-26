@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { documents } from "@/lib/data";
+import { Breadcrumb } from "@/components/shared/breadcrumb";
 import { ClassifiedBadge } from "@/components/shared/classified-badge";
 import { Radio, ChevronRight, ImageOff } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -11,13 +12,10 @@ export default function ComunicacionesPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-12">
       {/* Breadcrumb */}
-      <div className="mb-8 font-typewriter text-xs uppercase tracking-[0.15em] text-muted-foreground">
-        <Link href="/expediente" className="hover:text-amber transition-colors">
-          Expediente
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <span className="text-foreground">Comunicaciones Interceptadas</span>
-      </div>
+      <Breadcrumb items={[
+        { label: "Expediente", href: "/expediente" },
+        { label: "Comunicaciones Interceptadas" },
+      ]} />
 
       {/* Header */}
       <div className="mb-10 space-y-3">

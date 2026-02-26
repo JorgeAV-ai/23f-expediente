@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { documents, getDocument, getPersonsByDocument, getAnnotationsByDocument } from "@/lib/data";
 import { getExtractedText } from "@/lib/data-server";
+import { Breadcrumb } from "@/components/shared/breadcrumb";
 import { ClassifiedBadge } from "@/components/shared/classified-badge";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -56,20 +57,11 @@ export default async function DocumentDetailPage({
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:py-12">
       {/* Breadcrumb */}
-      <div className="mb-8 font-typewriter text-xs uppercase tracking-[0.15em] text-muted-foreground">
-        <Link href="/expediente" className="hover:text-amber transition-colors">
-          Expediente
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <Link
-          href="/expediente/documentos"
-          className="hover:text-amber transition-colors"
-        >
-          Documentos
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <span className="text-foreground">{doc.titleShort}</span>
-      </div>
+      <Breadcrumb items={[
+        { label: "Expediente", href: "/expediente" },
+        { label: "Documentos", href: "/expediente/documentos" },
+        { label: doc.titleShort },
+      ]} />
 
       {/* Document header */}
       <div className="document-card paper-texture relative mb-8 rounded-sm border border-border/50 bg-card p-5 sm:p-8">
