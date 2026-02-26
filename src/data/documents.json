@@ -65,7 +65,8 @@
     "historicalContext": "En esta conversación se revelan los verdaderos objetivos de los conspiradores: disolver el Parlamento y establecer una Junta Militar, así como el papel que pretendía jugar el General Armada.",
     "thumbnailPath": "/thumbnails/interior/guardia-civil/23F_2_conversacion_gc.webp",
     "sourceCategory": "interior/guardia-civil",
-    "hasExtractedText": false
+    "hasExtractedText": true,
+    "isOcrText": true
   },
   {
     "id": "doc-3-el-pardo",
@@ -245,7 +246,7 @@
     "pdfPath": "/documents/interior/guardia-civil/23F_9_oficio_pais_vasco_tejero.pdf",
     "thumbnailPath": "/thumbnails/interior/guardia-civil/23F_9_oficio_pais_vasco_tejero.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Oficio relativo a Tejero y el País Vasco. 1 página(s).",
     "personsReferenced": [
       "tejero"
@@ -258,7 +259,8 @@
       "desclasificado",
       "guardia-civil"
     ],
-    "historicalContext": "Documentación de la Guardia Civil relativa al intento de golpe de Estado del 23 de febrero de 1981."
+    "historicalContext": "Documentación de la Guardia Civil relativa al intento de golpe de Estado del 23 de febrero de 1981.",
+    "isOcrText": true
   },
   {
     "id": "gc-prensa-arresto-tejero",
@@ -304,7 +306,7 @@
     "pdfPath": "/documents/interior/guardia-civil/23F_10_tejero_galaxia.pdf",
     "thumbnailPath": "/thumbnails/interior/guardia-civil/23F_10_tejero_galaxia.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento sobre Tejero y la Operación Galaxia. 1 página(s).",
     "personsReferenced": [
       "tejero"
@@ -317,7 +319,8 @@
       "desclasificado",
       "guardia-civil"
     ],
-    "historicalContext": "Documentación de la Guardia Civil relativa al intento de golpe de Estado del 23 de febrero de 1981."
+    "historicalContext": "Documentación de la Guardia Civil relativa al intento de golpe de Estado del 23 de febrero de 1981.",
+    "isOcrText": true
   },
   {
     "id": "gc-telex-interiores",
@@ -362,7 +365,7 @@
     "pdfPath": "/documents/interior/policia/nota_apoyo_economico_10-05-83.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_apoyo_economico_10-05-83.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -374,7 +377,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-nota-ayuda-implicados-18-03-81",
@@ -390,7 +394,7 @@
     "pdfPath": "/documents/interior/policia/nota_ayuda_implicados_18-03-81.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_ayuda_implicados_18-03-81.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -402,7 +406,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-nota-fuerza-nueva-12-03-81",
@@ -418,7 +423,7 @@
     "pdfPath": "/documents/interior/policia/nota_fuerza_nueva_12-03-81.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_fuerza_nueva_12-03-81.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -430,7 +435,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-nota-mujeres-militares-27-03-81",
@@ -446,7 +452,7 @@
     "pdfPath": "/documents/interior/policia/nota_mujeres_militares_27-03-81.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_mujeres_militares_27-03-81.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -458,7 +464,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-nota-operacion-ariete-18-03-81",
@@ -474,7 +481,7 @@
     "pdfPath": "/documents/interior/policia/nota_operacion_ariete_18-03-81.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_operacion_ariete_18-03-81.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -486,7 +493,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-nota-pce-11-05-81",
@@ -502,7 +510,7 @@
     "pdfPath": "/documents/interior/policia/nota_pce_11-05-81.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_pce_11-05-81.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -514,7 +522,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-nota-psoe-13-05-81",
@@ -530,7 +539,7 @@
     "pdfPath": "/documents/interior/policia/nota_psoe_13-05-81.pdf",
     "thumbnailPath": "/thumbnails/interior/policia/nota_psoe_13-05-81.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Nota informativa del Cuerpo Superior de Policía relacionada con el 23-F y sus consecuencias. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -542,7 +551,8 @@
       "policia",
       "intelligence-note"
     ],
-    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F."
+    "historicalContext": "Las notas informativas de la Policía documentan las consecuencias políticas y sociales del intento de golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "pol-situacion-regiones-24-02-81",
@@ -723,7 +733,7 @@
     "pdfPath": "/documents/interior/archivo/involucionismo_golpe_militar.pdf",
     "thumbnailPath": "/thumbnails/interior/archivo/involucionismo_golpe_militar.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Informe sobre el involucionismo y posibilidad de golpe militar. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -735,7 +745,8 @@
       "archivo-interior",
       "analysis"
     ],
-    "historicalContext": "Los análisis de inteligencia interior reflejan la preocupación del Gobierno por las tendencias involucionistas en sectores de las Fuerzas Armadas."
+    "historicalContext": "Los análisis de inteligencia interior reflejan la preocupación del Gobierno por las tendencias involucionistas en sectores de las Fuerzas Armadas.",
+    "isOcrText": true
   },
   {
     "id": "arch-juicio-23f-acotaciones",
@@ -1831,7 +1842,7 @@
     "pdfPath": "/documents/defensa/cni/documento_30.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_30.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 30 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -1844,7 +1855,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-31",
@@ -1889,7 +1901,7 @@
     "pdfPath": "/documents/defensa/cni/documento_32.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_32.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 32 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -1902,7 +1914,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-33",
@@ -1947,7 +1960,7 @@
     "pdfPath": "/documents/defensa/cni/documento_34.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_34.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 34 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -1960,7 +1973,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-35",
@@ -1976,7 +1990,7 @@
     "pdfPath": "/documents/defensa/cni/documento_35.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_35.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 35 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -1989,7 +2003,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-36",
@@ -2005,7 +2020,7 @@
     "pdfPath": "/documents/defensa/cni/documento_36.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_36.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 36 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2018,7 +2033,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-37",
@@ -2266,7 +2282,7 @@
     "pdfPath": "/documents/defensa/cni/documento_45.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_45.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 45 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2279,7 +2295,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-46",
@@ -2295,7 +2312,7 @@
     "pdfPath": "/documents/defensa/cni/documento_46.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_46.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 46 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2308,7 +2325,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-47",
@@ -2324,7 +2342,7 @@
     "pdfPath": "/documents/defensa/cni/documento_47.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_47.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 47 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2337,7 +2355,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-48",
@@ -2643,7 +2662,7 @@
     "pdfPath": "/documents/defensa/cni/documento_58.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_58.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 58 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2656,7 +2675,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-59",
@@ -2672,7 +2692,7 @@
     "pdfPath": "/documents/defensa/cni/documento_59.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_59.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 59 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2685,7 +2705,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-60",
@@ -2817,7 +2838,7 @@
     "pdfPath": "/documents/defensa/cni/documento_64.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_64.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 64 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2830,7 +2851,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-65",
@@ -2846,7 +2868,7 @@
     "pdfPath": "/documents/defensa/cni/documento_65.pdf",
     "thumbnailPath": "/thumbnails/defensa/cni/documento_65.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento desclasificado n.º 65 del CESID/CNI sin texto extraído. El documento original en PDF contiene información relacionada con el golpe de Estado del 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -2859,7 +2881,8 @@
       "cesid",
       "sin-texto"
     ],
-    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981."
+    "historicalContext": "Forma parte del conjunto de documentos desclasificados del CESID sobre el intento de golpe de Estado del 23-F de 1981.",
+    "isOcrText": true
   },
   {
     "id": "cni-documento-66",
@@ -3568,7 +3591,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_declaracion_2.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_declaracion_2.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Declaración judicial en el marco del sumario por el intento de golpe de Estado del 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3581,7 +3604,8 @@
       "judicial",
       "testimony"
     ],
-    "historicalContext": "Las declaraciones judiciales de los implicados constituyen piezas fundamentales del sumario instruido contra los golpistas del 23-F."
+    "historicalContext": "Las declaraciones judiciales de los implicados constituyen piezas fundamentales del sumario instruido contra los golpistas del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-declaracion-3",
@@ -3597,7 +3621,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_declaracion_3.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_declaracion_3.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Declaración judicial en el marco del sumario por el intento de golpe de Estado del 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3610,7 +3634,8 @@
       "judicial",
       "testimony"
     ],
-    "historicalContext": "Las declaraciones judiciales de los implicados constituyen piezas fundamentales del sumario instruido contra los golpistas del 23-F."
+    "historicalContext": "Las declaraciones judiciales de los implicados constituyen piezas fundamentales del sumario instruido contra los golpistas del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-declaracion-4",
@@ -3626,7 +3651,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_declaracion_4.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_declaracion_4.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Declaración judicial en el marco del sumario por el intento de golpe de Estado del 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3639,7 +3664,8 @@
       "judicial",
       "testimony"
     ],
-    "historicalContext": "Las declaraciones judiciales de los implicados constituyen piezas fundamentales del sumario instruido contra los golpistas del 23-F."
+    "historicalContext": "Las declaraciones judiciales de los implicados constituyen piezas fundamentales del sumario instruido contra los golpistas del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-detencion-milans",
@@ -3712,7 +3738,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21802_incomunicacion_tejero.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21802_incomunicacion_tejero.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Orden de incomunicación de Tejero tras el golpe del 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3724,7 +3750,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "El Teniente Coronel Tejero lideró el asalto al Congreso de los Diputados el 23 de febrero de 1981, secuestrando a los parlamentarios durante más de 17 horas."
+    "historicalContext": "El Teniente Coronel Tejero lideró el asalto al Congreso de los Diputados el 23 de febrero de 1981, secuestrando a los parlamentarios durante más de 17 horas.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-informe-recusacion",
@@ -3740,7 +3767,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_informe_recusacion.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_informe_recusacion.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Informe sobre recusación en el proceso judicial del 23-F. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3752,7 +3779,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "Documentación procesal del Archivo General Militar correspondiente al juicio por el golpe de Estado del 23-F."
+    "historicalContext": "Documentación procesal del Archivo General Militar correspondiente al juicio por el golpe de Estado del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-peticiones-abogados",
@@ -3796,7 +3824,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_1.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_1.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3809,7 +3837,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-2",
@@ -3825,7 +3854,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_2.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_2.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3838,7 +3867,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-3",
@@ -3854,7 +3884,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_3.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_3.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3867,7 +3897,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-4",
@@ -3883,7 +3914,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_4.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_4.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3896,7 +3927,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-5",
@@ -3912,7 +3944,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_5.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_5.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3925,7 +3957,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-6",
@@ -3941,7 +3974,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_6.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_6.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3954,7 +3987,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-s1",
@@ -3970,7 +4004,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_s1.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_s1.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -3983,7 +4017,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-implicado-s2",
@@ -3999,7 +4034,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_implicado_s2.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_implicado_s2.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4012,7 +4047,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-procesamiento-milans",
@@ -4028,7 +4064,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21800_procesamiento_milans.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21800_procesamiento_milans.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Auto de procesamiento del sumario judicial contra implicados en el golpe del 23-F. Documento de 1 página(s) del Archivo General Militar.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4041,7 +4077,8 @@
       "judicial",
       "indictment"
     ],
-    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F."
+    "historicalContext": "Los autos de procesamiento son las resoluciones judiciales por las que el Consejo Supremo de Justicia Militar decidió juzgar formalmente a los implicados en el golpe del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-queja-milans",
@@ -4057,7 +4094,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21804_queja_milans.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21804_queja_milans.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Escrito de queja presentado por Milans del Bosch durante el proceso judicial del 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4069,7 +4106,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "El Teniente General Milans del Bosch, Capitán General de Valencia, fue una de las figuras clave del golpe, al sacar los tanques a las calles de Valencia la noche del 23-F."
+    "historicalContext": "El Teniente General Milans del Bosch, Capitán General de Valencia, fue una de las figuras clave del golpe, al sacar los tanques a las calles de Valencia la noche del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-sancion-consejeros",
@@ -4085,7 +4123,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21801_sancion_consejeros.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21801_sancion_consejeros.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento de sanciones a consejeros implicados en el 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4097,7 +4135,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "Documentación procesal del Archivo General Militar correspondiente al juicio por el golpe de Estado del 23-F."
+    "historicalContext": "Documentación procesal del Archivo General Militar correspondiente al juicio por el golpe de Estado del 23-F.",
+    "isOcrText": true
   },
   {
     "id": "def-carpeta-seguridad-visitas-tejero",
@@ -4113,7 +4152,7 @@
     "pdfPath": "/documents/defensa/archivo-general/carpeta_21802_seguridad_visitas_tejero.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/carpeta_21802_seguridad_visitas_tejero.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Normas de seguridad y visitas para Tejero durante su detención. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4125,7 +4164,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "El Teniente Coronel Tejero lideró el asalto al Congreso de los Diputados el 23 de febrero de 1981, secuestrando a los parlamentarios durante más de 17 horas."
+    "historicalContext": "El Teniente Coronel Tejero lideró el asalto al Congreso de los Diputados el 23 de febrero de 1981, secuestrando a los parlamentarios durante más de 17 horas.",
+    "isOcrText": true
   },
   {
     "id": "def-causa-abandono-sanchez-valiente",
@@ -4141,7 +4181,7 @@
     "pdfPath": "/documents/defensa/archivo-general/causa_9481_abandono_sanchez_valiente.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/causa_9481_abandono_sanchez_valiente.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documentación sobre el abandono de destino de Sánchez Valiente. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4153,7 +4193,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "El caso de Sánchez Valiente ilustra las ramificaciones judiciales del golpe del 23-F entre los mandos militares implicados."
+    "historicalContext": "El caso de Sánchez Valiente ilustra las ramificaciones judiciales del golpe del 23-F entre los mandos militares implicados.",
+    "isOcrText": true
   },
   {
     "id": "def-causa-hoja-servicios-sanchez-valiente",
@@ -4169,7 +4210,7 @@
     "pdfPath": "/documents/defensa/archivo-general/causa_9481_hoja_servicios_sanchez_valiente.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/causa_9481_hoja_servicios_sanchez_valiente.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Hoja de servicios del implicado Sánchez Valiente. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4181,7 +4222,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "El caso de Sánchez Valiente ilustra las ramificaciones judiciales del golpe del 23-F entre los mandos militares implicados."
+    "historicalContext": "El caso de Sánchez Valiente ilustra las ramificaciones judiciales del golpe del 23-F entre los mandos militares implicados.",
+    "isOcrText": true
   },
   {
     "id": "def-causa-informe-juridico-sanchez-valiente",
@@ -4197,7 +4239,7 @@
     "pdfPath": "/documents/defensa/archivo-general/causa_9481_informe_juridico_sanchez_valiente.pdf",
     "thumbnailPath": "/thumbnails/defensa/archivo-general/causa_9481_informe_juridico_sanchez_valiente.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Informe jurídico relativo a Sánchez Valiente en el marco del 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4209,7 +4251,8 @@
       "archivo-militar",
       "judicial"
     ],
-    "historicalContext": "El caso de Sánchez Valiente ilustra las ramificaciones judiciales del golpe del 23-F entre los mandos militares implicados."
+    "historicalContext": "El caso de Sánchez Valiente ilustra las ramificaciones judiciales del golpe del 23-F entre los mandos militares implicados.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d18",
@@ -4225,7 +4268,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D18.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D18.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4238,7 +4281,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d19",
@@ -4254,7 +4298,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D19.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D19.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4267,7 +4311,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d20",
@@ -4283,7 +4328,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D20.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D20.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4296,7 +4341,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d21",
@@ -4312,7 +4358,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D21.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D21.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4325,7 +4371,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d22",
@@ -4341,7 +4388,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D22.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D22.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4354,7 +4401,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d23",
@@ -4370,7 +4418,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D23.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D23.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4383,7 +4431,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8307633-d24",
@@ -4399,7 +4448,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-07633/D24.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-07633/D24.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4412,7 +4461,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8308764-d25",
@@ -4428,7 +4478,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-08764/D25.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-08764/D25.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4441,7 +4491,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8309301-d26",
@@ -4457,7 +4508,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-09301/D26.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-09301/D26.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4470,7 +4521,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8309301-d27",
@@ -4486,7 +4538,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-09301/D27.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-09301/D27.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4499,7 +4551,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8309301-d28",
@@ -4515,7 +4568,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-09301/D28.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-09301/D28.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 1 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4528,7 +4581,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8309301-d29",
@@ -4544,7 +4598,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-09301/D29.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-09301/D29.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4557,7 +4611,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8309301-d30",
@@ -4573,7 +4628,7 @@
     "pdfPath": "/documents/exteriores/AGA-83-09301/D30.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGA-83-09301/D30.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4586,7 +4641,8 @@
       "diplomatic",
       "AGA"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-aga8309301-d31",
@@ -4631,7 +4687,7 @@
     "pdfPath": "/documents/exteriores/AGMAE-40201/D15.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGMAE-40201/D15.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4644,7 +4700,8 @@
       "diplomatic",
       "AGMAE"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-agmae40201-d16",
@@ -4662,7 +4719,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-40201/D16.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4693,7 +4750,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-40201/D17.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4722,7 +4779,7 @@
     "pdfPath": "/documents/exteriores/AGMAE-R39017/D1.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGMAE-R39017/D1.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4735,7 +4792,8 @@
       "diplomatic",
       "AGMAE"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-agmaer39017-d2",
@@ -4753,7 +4811,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D2.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4782,7 +4840,7 @@
     "pdfPath": "/documents/exteriores/AGMAE-R39017/D3.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGMAE-R39017/D3.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4795,7 +4853,8 @@
       "diplomatic",
       "AGMAE"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-agmaer39017-d4",
@@ -4813,7 +4872,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D4.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4844,7 +4903,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D5.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4875,7 +4934,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D6.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4906,7 +4965,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D7.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4935,7 +4994,7 @@
     "pdfPath": "/documents/exteriores/AGMAE-R39017/D8.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGMAE-R39017/D8.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 3 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4948,7 +5007,8 @@
       "diplomatic",
       "AGMAE"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   },
   {
     "id": "ext-agmaer39017-d9",
@@ -4966,7 +5026,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D9.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -4997,7 +5057,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D10.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -5028,7 +5088,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D11.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -5059,7 +5119,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D12.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -5090,7 +5150,7 @@
     "scanPaths": [
       "/documents/exteriores/AGMAE-R39017/D13.jpg"
     ],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Imagen digitalizada de documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F.",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -5119,7 +5179,7 @@
     "pdfPath": "/documents/exteriores/AGMAE-R39017/D14.pdf",
     "thumbnailPath": "/thumbnails/exteriores/AGMAE-R39017/D14.webp",
     "scanPaths": [],
-    "hasExtractedText": false,
+    "hasExtractedText": true,
     "summary": "Documento diplomático del Archivo General de la Administración (Exteriores) relacionado con el 23-F. 2 página(s).",
     "personsReferenced": [],
     "locationsReferenced": [],
@@ -5132,6 +5192,7 @@
       "diplomatic",
       "AGMAE"
     ],
-    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas."
+    "historicalContext": "Documentación diplomática del Archivo General de la Administración que refleja la dimensión internacional del golpe del 23-F y las reacciones de las embajadas españolas.",
+    "isOcrText": true
   }
 ]

@@ -41,6 +41,7 @@ export interface Document {
   thumbnailPath: string;
   scanPaths: string[];
   hasExtractedText: boolean;
+  isOcrText?: boolean;
   summary: string;
   personsReferenced: string[];
   locationsReferenced: string[];

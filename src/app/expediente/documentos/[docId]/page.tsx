@@ -56,7 +56,7 @@ export default async function DocumentDetailPage({
 
   const relatedPersons = getPersonsByDocument(doc.id);
   const extractedText = getExtractedText(doc);
-  const isOcrUnverified = !doc.hasExtractedText && extractedText !== null;
+  const isOcrUnverified = doc.isOcrText === true;
   const docAnnotations = getAnnotationsByDocument(doc.id);
   const relatedEvents = getEventsByDocument(doc.id);
   const { prev, next } = getDocumentNeighbors(doc.id);

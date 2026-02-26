@@ -6,6 +6,7 @@ import Image from "next/image";
 import Fuse from "fuse.js";
 import { ClassifiedBadge } from "@/components/shared/classified-badge";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 import { useVisitedDocuments } from "@/hooks/use-visited-documents";
 import {
   FileText,
@@ -366,9 +367,14 @@ export function DocumentFilters({ documents }: { documents: Document[] }) {
                           {doc.hasExtractedText && (
                             <Badge
                               variant="outline"
-                              className="font-typewriter text-[7px] uppercase tracking-wider border-green-800/50 text-green-500"
+                              className={cn(
+                                "font-typewriter text-[7px] uppercase tracking-wider",
+                                doc.isOcrText
+                                  ? "border-amber/30 text-amber/60"
+                                  : "border-green-800/50 text-green-500"
+                              )}
                             >
-                              Texto disponible
+                              {doc.isOcrText ? "OCR" : "Texto disponible"}
                             </Badge>
                           )}
                         </div>

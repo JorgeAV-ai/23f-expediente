@@ -3,7 +3,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { AlertTriangle, FileWarning, FileText, StickyNote } from "lucide-react";
+import { AlertTriangle, FileWarning, FileText, StickyNote, ScanSearch } from "lucide-react";
 
 export interface ExtractedText {
   pages: { num: number; text: string }[];
@@ -69,10 +69,25 @@ export function TextPanel({
       {/* Header */}
       <div className="flex items-center justify-between border-b border-border px-4 py-2">
         <div className="flex items-center gap-2">
-          <FileText size={14} className="text-amber" />
-          <span className="font-typewriter text-xs font-bold uppercase tracking-[0.15em] text-amber">
-            Transcripcion
+          {isOcrUnverified ? (
+            <ScanSearch size={14} className="text-amber/70" />
+          ) : (
+            <FileText size={14} className="text-amber" />
+          )}
+          <span className={cn(
+            "font-typewriter text-xs font-bold uppercase tracking-[0.15em]",
+            isOcrUnverified ? "text-amber/70" : "text-amber"
+          )}>
+            {isOcrUnverified ? "Texto OCR" : "Transcripcion"}
           </span>
+          {isOcrUnverified && (
+            <span className="inline-flex items-center gap-1 rounded-full border border-amber/20 bg-amber/5 px-1.5 py-0.5">
+              <AlertTriangle size={9} className="text-amber/50" />
+              <span className="font-typewriter text-[8px] text-amber/50">
+                sin verificar
+              </span>
+            </span>
+          )}
           {annotationCount > 0 && (
             <span className="inline-flex items-center gap-1 rounded-full border border-amber/20 bg-amber/5 px-1.5 py-0.5">
               <StickyNote size={10} className="text-amber/70" />
@@ -94,11 +109,16 @@ export function TextPanel({
       </div>
 
       {isOcrUnverified && (
-        <div className="mx-4 mt-3 flex items-start gap-2 rounded-sm border border-amber/30 bg-amber/5 px-3 py-2">
-          <AlertTriangle size={14} className="mt-0.5 shrink-0 text-amber/70" />
-          <p className="font-typewriter text-[10px] leading-relaxed text-amber/70">
-            Texto extraido por OCR. Puede contener errores de reconocimiento.
-          </p>
+        <div className="mx-4 mt-3 flex items-start gap-2.5 rounded-sm border border-amber/30 bg-amber/5 px-3 py-2.5">
+          <AlertTriangle size={14} className="mt-0.5 shrink-0 text-amber/60" />
+          <div>
+            <p className="font-typewriter text-[11px] font-bold leading-relaxed text-amber/70">
+              Texto extraido mediante OCR
+            </p>
+            <p className="font-typewriter text-[10px] leading-relaxed text-amber/50">
+              Reconocimiento optico automatico. Puede contener errores, omisiones o fragmentos ilegibles.
+            </p>
+          </div>
         </div>
       )}
 

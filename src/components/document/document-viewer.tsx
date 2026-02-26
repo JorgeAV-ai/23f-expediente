@@ -5,7 +5,7 @@ import { PdfViewer } from "./pdf-viewer";
 import { TextPanel, type ExtractedText } from "./text-panel";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
-import { FileText, BookOpen } from "lucide-react";
+import { FileText, BookOpen, ScanSearch } from "lucide-react";
 
 interface DocumentViewerProps {
   pdfPath: string;
@@ -82,8 +82,17 @@ export function DocumentViewer({
               value="transcripcion"
               className="flex-1 gap-1.5 font-typewriter text-xs uppercase tracking-wider"
             >
-              <BookOpen size={12} />
-              Transcripcion
+              {isOcrUnverified ? (
+                <>
+                  <ScanSearch size={12} />
+                  Texto OCR
+                </>
+              ) : (
+                <>
+                  <BookOpen size={12} />
+                  Transcripcion
+                </>
+              )}
             </TabsTrigger>
           </TabsList>
 
