@@ -1,0 +1,319 @@
+/* ═══════════════════════════════════════════════
+   War Room Map — Leaflet custom styles
+   Dark military/CRT aesthetic
+   ═══════════════════════════════════════════════ */
+
+/* ═══ Custom pulsing dot markers ═══ */
+.war-room-marker {
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+  transition: transform 0.2s ease;
+}
+
+.war-room-marker::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+  animation: marker-pulse 2.5s ease-out infinite;
+}
+
+@keyframes marker-pulse {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+  100% {
+    width: 300%;
+    height: 300%;
+    opacity: 0;
+  }
+}
+
+/* ═══ Selected marker — larger pulsing ring ═══ */
+.war-room-marker-selected {
+  z-index: 1000 !important;
+  transform: scale(1.3);
+}
+
+.war-room-marker-selected::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: marker-ring-pulse 1.8s ease-out infinite;
+}
+
+@keyframes marker-ring-pulse {
+  0% {
+    width: 150%;
+    height: 150%;
+    opacity: 0.7;
+    border-width: 2px;
+  }
+  100% {
+    width: 450%;
+    height: 450%;
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+/* ═══ Highlighted marker (person filter) ═══ */
+.war-room-marker-highlighted {
+  filter: brightness(1.4);
+  box-shadow: 0 0 14px currentColor, 0 0 28px currentColor;
+}
+
+/* Dimmed markers when a person is selected but not at this location */
+.war-room-marker-dimmed {
+  opacity: 0.25 !important;
+  filter: grayscale(0.6);
+}
+
+.war-room-marker-dimmed::after {
+  display: none;
+}
+
+/* ═══ Animated communication polylines ═══ */
+.war-room-comm-line {
+  fill: none;
+  stroke-width: 2;
+  stroke-dasharray: 12, 8;
+  animation: dash-travel 2s linear infinite;
+  opacity: 0.5;
+}
+
+.war-room-comm-line:hover {
+  opacity: 0.8;
+  stroke-width: 3;
+}
+
+@keyframes dash-travel {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Secondary glow line underneath */
+.war-room-comm-line-glow {
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+  opacity: 0.08;
+  filter: blur(4px);
+}
+
+/* ═══ Dark popup styling ═══ */
+.leaflet-popup-content-wrapper {
+  background: #141413 !important;
+  border: 1px solid rgba(212, 168, 83, 0.3) !important;
+  border-radius: 2px !important;
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(0, 0, 0, 0.3) !important;
+  color: #e8e4dd !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  font-family: 'Courier Prime', 'Courier New', monospace !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  color: #e8e4dd !important;
+}
+
+.leaflet-popup-tip {
+  background: #141413 !important;
+  border: 1px solid rgba(212, 168, 83, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+.leaflet-popup-close-button {
+  color: #8a8578 !important;
+  font-size: 16px !important;
+  padding: 6px 8px !important;
+  top: 2px !important;
+  right: 2px !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #d4a853 !important;
+  background: transparent !important;
+}
+
+/* Popup inner content */
+.war-room-popup {
+  padding: 12px 14px;
+}
+
+.war-room-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(42, 37, 32, 0.8);
+}
+
+.war-room-popup-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.war-room-popup-name {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #e8e4dd;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.war-room-popup-significance {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #8a8578;
+  margin-bottom: 8px;
+  max-width: 260px;
+}
+
+.war-room-popup-persons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 10px;
+  color: #d4a853;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ═══ Leaflet attribution — subtle ═══ */
+.leaflet-control-attribution {
+  background: rgba(10, 10, 11, 0.7) !important;
+  color: rgba(138, 133, 120, 0.4) !important;
+  font-size: 9px !important;
+  border: none !important;
+  padding: 2px 6px !important;
+}
+
+.leaflet-control-attribution a {
+  color: rgba(138, 133, 120, 0.5) !important;
+}
+
+.leaflet-control-attribution a:hover {
+  color: rgba(212, 168, 83, 0.6) !important;
+}
+
+/* ═══ Leaflet zoom controls — dark ═══ */
+.leaflet-control-zoom a {
+  background: #141413 !important;
+  color: #8a8578 !important;
+  border-color: #2a2520 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #1c1c1a !important;
+  color: #d4a853 !important;
+}
+
+/* ═══ Vignette CRT overlay ═══ */
+.war-room-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 800;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    rgba(0, 0, 0, 0.35) 70%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
+
+/* Subtle CRT scanlines on the map */
+.war-room-scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 801;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* ═══ SVG overlay for comm lines ═══ */
+.war-room-svg-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 600;
+}
+
+/* ═══ Map container overrides ═══ */
+.war-room-map-container {
+  background: #050506 !important;
+}
+
+.war-room-map-container .leaflet-tile-pane {
+  filter: brightness(0.85) contrast(1.1) saturate(0.8);
+}
+
+/* ═══ Legend overlay ═══ */
+.war-room-legend {
+  position: absolute;
+  bottom: 28px;
+  left: 10px;
+  z-index: 802;
+  background: rgba(20, 20, 19, 0.85);
+  border: 1px solid rgba(42, 37, 32, 0.6);
+  padding: 10px 12px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 9px;
+  color: rgba(232, 228, 221, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  backdrop-filter: blur(4px);
+}
+
+.war-room-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.war-room-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

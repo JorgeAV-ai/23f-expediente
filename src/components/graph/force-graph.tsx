@@ -37,6 +37,8 @@ interface GraphLink extends SimulationLinkDatum<GraphNode> {
 interface ForceGraphProps {
   selectedPersonId: string | null;
   onSelectPerson: (personId: string | null) => void;
+  highlightedPersonIds?: Set<string> | null;
+  visibleRoles?: Set<string> | null;
 }
 
 // ═══════════════════════════════════════
@@ -64,6 +66,17 @@ const relationshipEdgeColor: Record<string, string> = {
   intermediary: "#d4a853",
 };
 
+const relationshipLabelsES: Record<RelationshipType, string> = {
+  "co-conspirator": "Co-conspirador",
+  subordinate: "Subordinado",
+  superior: "Superior",
+  spouse: "Cónyuge",
+  family: "Familia",
+  "political-ally": "Aliado político",
+  "contacted-during-coup": "Contactado durante el golpe",
+  intermediary: "Intermediario",
+};
+
 function getEdgeDashArray(type: RelationshipType): string {
   switch (type) {
     case "intermediary":
@@ -81,18 +94,30 @@ function getEdgeDashArray(type: RelationshipType): string {
 // Build graph data from persons
 // ═══════════════════════════════════════
 
-function buildGraphData(): { nodes: GraphNode[]; links: GraphLink[] } {
-  const nodes: GraphNode[] = persons.map((p) => ({
+function buildGraphData(visibleRoles: Set<string> | null | undefined): {
+  nodes: GraphNode[];
+  links: GraphLink[];
+} {
+  const filteredPersons =
+    visibleRoles != null
+      ? persons.filter((p) => visibleRoles.has(p.role))
+      : persons;
+
+  const visibleIds = new Set(filteredPersons.map((p) => p.id));
+
+  const nodes: GraphNode[] = filteredPersons.map((p) => ({
     id: p.id,
     person: p,
-    connectionCount: p.connections.length,
+    connectionCount: p.connections.filter((c) => visibleIds.has(c.personId))
+      .length,
   }));
 
   const linkSet = new Set<string>();
   const links: GraphLink[] = [];
 
-  for (const person of persons) {
+  for (const person of filteredPersons) {
     for (const conn of person.connections) {
+      if (!visibleIds.has(conn.personId)) continue;
       // Create a canonical key to avoid duplicate edges
       const key = [person.id, conn.personId].sort().join("--");
       if (!linkSet.has(key)) {
@@ -114,12 +139,25 @@ function buildGraphData(): { nodes: GraphNode[]; links: GraphLink[] } {
 }
 
 // ═══════════════════════════════════════
+// Compute node radius
+// ═══════════════════════════════════════
+
+function getNodeRadius(d: GraphNode): number {
+  const base = d.connectionCount + 3;
+  // Larger radius for persons with photos to show them clearly
+  const multiplier = d.person.imagePath ? 2.5 : 2;
+  return base * multiplier;
+}
+
+// ═══════════════════════════════════════
 // Component
 // ═══════════════════════════════════════
 
 export default function ForceGraph({
   selectedPersonId,
   onSelectPerson,
+  highlightedPersonIds,
+  visibleRoles,
 }: ForceGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -129,6 +167,11 @@ export default function ForceGraph({
     y: number;
     name: string;
     role: string;
+    // Edge tooltip fields (optional)
+    sourceName?: string;
+    targetName?: string;
+    relationshipLabel?: string;
+    description?: string;
   } | null>(null);
 
   // Keep selectedPersonId in a ref so d3 callbacks always see latest value
@@ -138,6 +181,10 @@ export default function ForceGraph({
   // Stable callback ref
   const onSelectRef = useRef(onSelectPerson);
   onSelectRef.current = onSelectPerson;
+
+  // Keep highlightedPersonIds in a ref
+  const highlightedRef = useRef(highlightedPersonIds);
+  highlightedRef.current = highlightedPersonIds;
 
   // ═══ Get connected person IDs for highlighting ═══
   const getConnectedIds = useCallback((personId: string): Set<string> => {
@@ -159,10 +206,11 @@ export default function ForceGraph({
     return ids;
   }, []);
 
-  // ═══ Update visual state when selection changes ═══
+  // ═══ Update visual state when selection/highlights change ═══
   const updateSelectionVisuals = useCallback(
     (svg: Selection<SVGSVGElement, unknown, null, undefined>) => {
       const currentSelected = selectedRef.current;
+      const highlighted = highlightedRef.current;
       const connectedIds = currentSelected
         ? getConnectedIds(currentSelected)
         : new Set<string>();
@@ -172,21 +220,37 @@ export default function ForceGraph({
         const g = select(this);
         const isSelected = d.id === currentSelected;
         const isConnected = currentSelected ? connectedIds.has(d.id) : false;
-        const isFaded = currentSelected ? !isSelected && !isConnected : false;
+        const isHighlighted = highlighted ? highlighted.has(d.id) : false;
+
+        // Determine fade logic:
+        // If highlighted set is active, fade those NOT highlighted and NOT selected
+        // If only selection is active, fade those NOT selected and NOT connected
+        let isFaded = false;
+        if (highlighted && highlighted.size > 0) {
+          isFaded = !isHighlighted && !isSelected;
+        } else if (currentSelected) {
+          isFaded = !isSelected && !isConnected;
+        }
+
+        const nodeOpacity = isFaded ? 0.15 : 1;
+        const filterVal = isSelected
+          ? "url(#glow-selected)"
+          : "url(#glow-node)";
 
         g.select(".node-circle")
-          .attr("opacity", isFaded ? 0.15 : 1)
-          .attr(
-            "filter",
-            isSelected ? "url(#glow-selected)" : "url(#glow-node)"
-          );
+          .attr("opacity", nodeOpacity)
+          .attr("filter", filterVal);
+
+        // Also fade photo image if present
+        g.select(".node-photo").attr("opacity", nodeOpacity);
 
         g.select(".node-label").attr("opacity", isFaded ? 0.1 : 0.8);
 
         // Show/hide selection ring
+        const ringR = getNodeRadius(d) + 4;
         g.select(".selection-ring")
           .attr("opacity", isSelected ? 1 : 0)
-          .attr("r", isSelected ? (d.connectionCount + 3) * 2.5 + 4 : 0);
+          .attr("r", isSelected ? ringR : 0);
       });
 
       // Update links
@@ -200,7 +264,15 @@ export default function ForceGraph({
             typeof d.target === "string" ? d.target : d.target.id;
           const involves =
             sourceId === currentSelected || targetId === currentSelected;
-          const isFaded = currentSelected ? !involves : false;
+
+          let isFaded = false;
+          if (highlighted && highlighted.size > 0) {
+            const sourceHighlighted = highlighted.has(sourceId);
+            const targetHighlighted = highlighted.has(targetId);
+            isFaded = !sourceHighlighted && !targetHighlighted && !involves;
+          } else if (currentSelected) {
+            isFaded = !involves;
+          }
 
           line
             .attr("opacity", isFaded ? 0.05 : involves ? 0.7 : 0.3)
@@ -224,7 +296,7 @@ export default function ForceGraph({
     // Clear any previous render
     svg.selectAll("*").remove();
 
-    // ═══ Defs: filters and patterns ═══
+    // ═══ Defs: filters, patterns, clipPaths ═══
     const defs = svg.append("defs");
 
     // Grid pattern for background
@@ -324,7 +396,23 @@ export default function ForceGraph({
     const g = svg.append("g").attr("class", "graph-main");
 
     // ═══ Build data ═══
-    const { nodes, links } = buildGraphData();
+    const { nodes, links } = buildGraphData(visibleRoles);
+
+    // ═══ Create clipPath defs for each node with a photo ═══
+    nodes.forEach((d) => {
+      if (d.person.imagePath) {
+        const r = getNodeRadius(d);
+        // Clip path for circular photo -- slightly smaller than the ring so the border shows
+        const clipR = r - 1.5;
+        defs
+          .append("clipPath")
+          .attr("id", `clip-photo-${d.id}`)
+          .append("circle")
+          .attr("cx", 0)
+          .attr("cy", 0)
+          .attr("r", clipR);
+      }
+    });
 
     // ═══ Simulation ═══
     const simulation = forceSimulation<GraphNode>(nodes)
@@ -338,7 +426,7 @@ export default function ForceGraph({
       .force("center", forceCenter(width / 2, height / 2))
       .force(
         "collide",
-        forceCollide<GraphNode>().radius((d) => (d.connectionCount + 3) * 2 + 10)
+        forceCollide<GraphNode>().radius((d) => getNodeRadius(d) + 10)
       );
 
     simulationRef.current = simulation;
@@ -352,11 +440,72 @@ export default function ForceGraph({
       .enter()
       .append("line")
       .attr("class", "graph-link")
-      .attr("stroke", (d) => relationshipEdgeColor[d.relationshipType] || "#d4a853")
+      .attr(
+        "stroke",
+        (d) => relationshipEdgeColor[d.relationshipType] || "#d4a853"
+      )
       .attr("stroke-width", 1)
       .attr("stroke-dasharray", (d) => getEdgeDashArray(d.relationshipType))
       .attr("opacity", 0.3)
       .attr("filter", "url(#glow-edge)");
+
+    // ═══ Invisible wider hit-area lines for edge hover ═══
+    const linkHitArea = g
+      .append("g")
+      .attr("class", "link-hit-areas")
+      .selectAll<SVGLineElement, GraphLink>("line")
+      .data(links)
+      .enter()
+      .append("line")
+      .attr("class", "graph-link-hit")
+      .attr("stroke", "transparent")
+      .attr("stroke-width", 12)
+      .style("cursor", "pointer");
+
+    // Edge hover tooltips
+    linkHitArea.on("mouseenter", function (event: MouseEvent, d: GraphLink) {
+      const sourceNode =
+        typeof d.source === "string"
+          ? nodes.find((n) => n.id === d.source)
+          : d.source;
+      const targetNode =
+        typeof d.target === "string"
+          ? nodes.find((n) => n.id === d.target)
+          : d.target;
+      const sourceName = sourceNode?.person.displayName ?? "?";
+      const targetName = targetNode?.person.displayName ?? "?";
+      const relLabel =
+        relationshipLabelsES[d.relationshipType] || d.relationshipType;
+
+      const svgRect = svgEl.getBoundingClientRect();
+      setTooltip({
+        x: event.clientX - svgRect.left,
+        y: event.clientY - svgRect.top - 50,
+        name: "",
+        role: "",
+        sourceName,
+        targetName,
+        relationshipLabel: relLabel,
+        description: d.description,
+      });
+    });
+
+    linkHitArea.on("mousemove", function (event: MouseEvent) {
+      const svgRect = svgEl.getBoundingClientRect();
+      setTooltip((prev) =>
+        prev
+          ? {
+              ...prev,
+              x: event.clientX - svgRect.left,
+              y: event.clientY - svgRect.top - 50,
+            }
+          : null
+      );
+    });
+
+    linkHitArea.on("mouseleave", function () {
+      setTooltip(null);
+    });
 
     // ═══ Nodes ═══
     const nodeGroup = g
@@ -390,20 +539,21 @@ export default function ForceGraph({
       .attr("dur", "1.5s")
       .attr("repeatCount", "indefinite");
 
-    // Main circle
+    // Main circle (border ring + fill for non-photo, border ring only for photo)
     nodeGroup.each(function (d, i) {
       const el = select(this);
-      const targetR = (d.connectionCount + 3) * 2;
+      const targetR = getNodeRadius(d);
       const color = roleHexColors[d.person.role] || "#9ca3af";
+      const hasPhoto = !!d.person.imagePath;
 
       const circle = el
         .append("circle")
         .attr("class", "node-circle")
         .attr("r", targetR)
-        .attr("fill", color)
+        .attr("fill", hasPhoto ? "none" : color)
         .attr("stroke", color)
-        .attr("stroke-width", 0.5)
-        .attr("stroke-opacity", 0.5)
+        .attr("stroke-width", hasPhoto ? 2.5 : 0.5)
+        .attr("stroke-opacity", hasPhoto ? 1 : 0.5)
         .attr("filter", "url(#glow-node)")
         .attr("opacity", 0);
 
@@ -428,12 +578,39 @@ export default function ForceGraph({
 
       // Set initial r to 0 for animation start
       circle.attr("r", 0);
+
+      // If this person has a photo, add the clipped image
+      if (hasPhoto) {
+        const photoR = targetR - 1.5;
+
+        const image = el
+          .append("image")
+          .attr("class", "node-photo")
+          .attr("href", d.person.imagePath!)
+          .attr("x", -photoR)
+          .attr("y", -photoR)
+          .attr("width", photoR * 2)
+          .attr("height", photoR * 2)
+          .attr("clip-path", `url(#clip-photo-${d.id})`)
+          .attr("preserveAspectRatio", "xMidYMid slice")
+          .attr("opacity", 0);
+
+        // Animate photo entry in sync with circle
+        image
+          .append("animate")
+          .attr("attributeName", "opacity")
+          .attr("from", "0")
+          .attr("to", "1")
+          .attr("dur", "0.6s")
+          .attr("begin", `${i * 0.1}s`)
+          .attr("fill", "freeze");
+      }
     });
 
     // Labels
     nodeGroup.each(function (d, i) {
       const el = select(this);
-      const labelOffset = (d.connectionCount + 3) * 2 + 14;
+      const labelOffset = getNodeRadius(d) + 14;
 
       const text = el
         .append("text")
@@ -524,11 +701,23 @@ export default function ForceGraph({
         .attr("x2", (d) => (d.target as GraphNode).x ?? 0)
         .attr("y2", (d) => (d.target as GraphNode).y ?? 0);
 
-      nodeGroup.attr("transform", (d) => `translate(${d.x ?? 0},${d.y ?? 0})`);
+      // Keep hit-area lines in sync with visible links
+      linkHitArea
+        .attr("x1", (d) => (d.source as GraphNode).x ?? 0)
+        .attr("y1", (d) => (d.source as GraphNode).y ?? 0)
+        .attr("x2", (d) => (d.target as GraphNode).x ?? 0)
+        .attr("y2", (d) => (d.target as GraphNode).y ?? 0);
+
+      nodeGroup.attr(
+        "transform",
+        (d) => `translate(${d.x ?? 0},${d.y ?? 0})`
+      );
     });
 
     // Initial selection visuals
-    updateSelectionVisuals(svg as Selection<SVGSVGElement, unknown, null, undefined>);
+    updateSelectionVisuals(
+      svg as Selection<SVGSVGElement, unknown, null, undefined>
+    );
 
     // ═══ Cleanup ═══
     return () => {
@@ -536,15 +725,23 @@ export default function ForceGraph({
       svg.selectAll("*").remove();
       svg.on("click", null);
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [visibleRoles]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ═══ Update visuals when selection changes ═══
+  // ═══ Update visuals when selection or highlights change ═══
   useEffect(() => {
     const svgEl = svgRef.current;
     if (!svgEl) return;
-    const svg = select(svgEl) as Selection<SVGSVGElement, unknown, null, undefined>;
+    const svg = select(svgEl) as Selection<
+      SVGSVGElement,
+      unknown,
+      null,
+      undefined
+    >;
     updateSelectionVisuals(svg);
-  }, [selectedPersonId, updateSelectionVisuals]);
+  }, [selectedPersonId, highlightedPersonIds, updateSelectionVisuals]);
+
+  // Determine if the current tooltip is an edge tooltip
+  const isEdgeTooltip = tooltip?.sourceName != null;
 
   return (
     <div ref={containerRef} className="relative h-full min-h-[400px] w-full">
@@ -554,8 +751,8 @@ export default function ForceGraph({
         style={{ display: "block" }}
       />
 
-      {/* Tooltip */}
-      {tooltip && (
+      {/* Tooltip -- node or edge */}
+      {tooltip && !isEdgeTooltip && (
         <div
           className="pointer-events-none absolute z-50 rounded-sm border border-amber/30 bg-card/95 px-3 py-1.5 shadow-lg backdrop-blur-sm"
           style={{
@@ -573,6 +770,30 @@ export default function ForceGraph({
         </div>
       )}
 
+      {/* Edge tooltip */}
+      {tooltip && isEdgeTooltip && (
+        <div
+          className="pointer-events-none absolute z-50 max-w-xs rounded-sm border border-amber/30 bg-card/95 px-3 py-2 shadow-lg backdrop-blur-sm"
+          style={{
+            left: tooltip.x,
+            top: tooltip.y,
+            transform: "translate(-50%, -100%)",
+          }}
+        >
+          <div className="font-typewriter text-[10px] font-bold text-foreground">
+            {tooltip.sourceName} &mdash; {tooltip.targetName}
+          </div>
+          <div className="mt-0.5 font-typewriter text-[9px] font-semibold text-amber">
+            {tooltip.relationshipLabel}
+          </div>
+          {tooltip.description && (
+            <div className="mt-1 font-typewriter text-[8px] leading-snug text-foreground/70">
+              {tooltip.description}
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Legend */}
       <div className="absolute bottom-3 left-3 rounded-sm border border-border/30 bg-card/80 p-3 backdrop-blur-sm">
         <div className="mb-2 font-typewriter text-[8px] uppercase tracking-widest text-amber/70">
@@ -583,7 +804,10 @@ export default function ForceGraph({
             <div key={role} className="flex items-center gap-2">
               <span
                 className="inline-block h-2 w-2 rounded-full"
-                style={{ backgroundColor: color, boxShadow: `0 0 4px ${color}` }}
+                style={{
+                  backgroundColor: color,
+                  boxShadow: `0 0 4px ${color}`,
+                }}
               />
               <span className="font-typewriter text-[8px] text-foreground/60">
                 {getRoleLabel(role as Person["role"])}
