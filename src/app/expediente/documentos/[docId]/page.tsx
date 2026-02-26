@@ -52,6 +52,7 @@ export default async function DocumentDetailPage({
 
   const relatedPersons = getPersonsByDocument(doc.id);
   const extractedText = getExtractedText(doc);
+  const isOcrUnverified = !doc.hasExtractedText && extractedText !== null;
   const docAnnotations = getAnnotationsByDocument(doc.id);
 
   return (
@@ -263,6 +264,7 @@ export default async function DocumentDetailPage({
         extractedText={extractedText}
         pageCount={doc.pageCount}
         annotationCount={docAnnotations.length}
+        isOcrUnverified={isOcrUnverified}
       />
     </div>
   );

@@ -24,6 +24,7 @@ interface DocumentViewerWrapperProps {
   extractedText: ExtractedText | null;
   pageCount: number;
   annotationCount?: number;
+  isOcrUnverified?: boolean;
 }
 
 export function DocumentViewerWrapper({
@@ -31,6 +32,7 @@ export function DocumentViewerWrapper({
   extractedText,
   pageCount,
   annotationCount = 0,
+  isOcrUnverified,
 }: DocumentViewerWrapperProps) {
   return (
     <DocumentViewer
@@ -38,6 +40,7 @@ export function DocumentViewerWrapper({
       extractedText={extractedText}
       pageCount={pageCount}
       annotationCount={annotationCount}
+      isOcrUnverified={isOcrUnverified}
     />
   );
 }

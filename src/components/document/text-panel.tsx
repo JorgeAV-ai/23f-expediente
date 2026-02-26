@@ -3,7 +3,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { FileWarning, FileText, StickyNote } from "lucide-react";
+import { AlertTriangle, FileWarning, FileText, StickyNote } from "lucide-react";
 
 export interface ExtractedText {
   pages: { num: number; text: string }[];
@@ -15,6 +15,7 @@ interface TextPanelProps {
   currentPage: number;
   totalPages: number;
   annotationCount?: number;
+  isOcrUnverified?: boolean;
   className?: string;
 }
 
@@ -23,6 +24,7 @@ export function TextPanel({
   currentPage,
   totalPages,
   annotationCount = 0,
+  isOcrUnverified,
   className,
 }: TextPanelProps) {
   if (!extractedText) {
@@ -90,6 +92,15 @@ export function TextPanel({
           )}
         </span>
       </div>
+
+      {isOcrUnverified && (
+        <div className="mx-4 mt-3 flex items-start gap-2 rounded-sm border border-amber/30 bg-amber/5 px-3 py-2">
+          <AlertTriangle size={14} className="mt-0.5 shrink-0 text-amber/70" />
+          <p className="font-typewriter text-[10px] leading-relaxed text-amber/70">
+            Texto extraido por OCR. Puede contener errores de reconocimiento.
+          </p>
+        </div>
+      )}
 
       {/* Text content */}
       <ScrollArea className="flex-1">
