@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FileText, Users, Radio, ChevronRight } from "lucide-react";
 import { documents, persons } from "@/lib/data";
 import { ClassifiedBadge } from "@/components/shared/classified-badge";
+import { VisitedCount } from "@/components/expediente/visited-count";
 
 const categories = [
   {
@@ -54,13 +55,14 @@ export default function ExpedientePage() {
 
       {/* Category grid */}
       <div className="grid gap-6 md:grid-cols-3">
-        {categories.map((cat) => {
+        {categories.map((cat, i) => {
           const Icon = cat.icon;
           return (
             <Link
               key={cat.href}
               href={cat.href}
-              className="document-card paper-texture group relative flex flex-col rounded-sm border border-border/50 bg-card p-8 transition-all hover:border-amber/30"
+              className="document-card paper-texture group relative flex flex-col rounded-sm border border-border/50 bg-card p-8 transition-all hover:border-amber/30 animate-fade-in-up"
+              style={{ animationDelay: `${i * 150}ms` }}
             >
               {/* Classification stamp */}
               <div className="absolute top-4 right-4">
@@ -85,6 +87,9 @@ export default function ExpedientePage() {
               <div className="flex items-center justify-between border-t border-border/30 pt-4">
                 <span className="font-typewriter text-[10px] uppercase tracking-[0.15em] text-amber/60">
                   {cat.count}
+                  {cat.href === "/expediente/documentos" && (
+                    <VisitedCount total={documents.length} />
+                  )}
                 </span>
                 <ChevronRight
                   size={14}
