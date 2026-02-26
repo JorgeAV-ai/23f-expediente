@@ -13,6 +13,7 @@ import { Breadcrumb } from "@/components/shared/breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { User, FileText, Link2, MapPin } from "lucide-react";
+import { PersonGraph } from "@/components/expediente/person-graph";
 
 export function generateStaticParams() {
   return persons.map((p) => ({ personId: p.id }));
@@ -142,6 +143,17 @@ export default async function PersonDetailPage({
               </Link>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Connection graph */}
+      {person.connections.length > 0 && (
+        <div className="mb-8">
+          <h2 className="mb-4 flex items-center gap-2 font-typewriter text-xs font-bold uppercase tracking-[0.15em] text-amber">
+            <Link2 size={14} />
+            Red de conexiones
+          </h2>
+          <PersonGraph person={person} />
         </div>
       )}
 
