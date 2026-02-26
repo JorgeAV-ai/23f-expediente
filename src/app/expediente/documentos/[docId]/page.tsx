@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import { DocumentViewerWrapper } from "@/components/document/document-viewer-wrapper";
 import { AnnotationSection } from "@/components/document/annotation-section";
+import { MarkVisited } from "@/components/expediente/mark-visited";
 import type { SourceCategory } from "@/types";
 import type { LucideIcon } from "lucide-react";
 
@@ -62,6 +63,7 @@ export default async function DocumentDetailPage({
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:py-12">
+      <MarkVisited docId={doc.id} />
       {/* Breadcrumb */}
       <Breadcrumb items={[
         { label: "Expediente", href: "/expediente" },
