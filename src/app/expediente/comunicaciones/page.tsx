@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { documents } from "@/lib/data";
+import { Breadcrumb } from "@/components/shared/breadcrumb";
 import { ClassifiedBadge } from "@/components/shared/classified-badge";
 import { Radio, ChevronRight, ImageOff } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -11,13 +12,10 @@ export default function ComunicacionesPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-12">
       {/* Breadcrumb */}
-      <div className="mb-8 font-typewriter text-xs uppercase tracking-[0.15em] text-muted-foreground">
-        <Link href="/expediente" className="hover:text-amber transition-colors">
-          Expediente
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <span className="text-foreground">Comunicaciones Interceptadas</span>
-      </div>
+      <Breadcrumb items={[
+        { label: "Expediente", href: "/expediente" },
+        { label: "Comunicaciones Interceptadas" },
+      ]} />
 
       {/* Header */}
       <div className="mb-10 space-y-3">
@@ -36,7 +34,7 @@ export default function ComunicacionesPage() {
         {communications.map((doc) => (
           <Link
             key={doc.id}
-            href={`/expediente/documentos/${doc.id}`}
+            href={`/expediente/comunicaciones/${doc.communicationId}`}
             className="document-card group flex items-start gap-4 rounded-sm border border-border/50 bg-card p-4 transition-all hover:border-amber/30 sm:gap-6 sm:p-6"
           >
             {/* Thumbnail */}

@@ -9,9 +9,11 @@ import {
   getPersonRoleBgColor,
   getPersonRoleLabel,
 } from "@/lib/data";
+import { Breadcrumb } from "@/components/shared/breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { User, FileText, Link2, MapPin } from "lucide-react";
+import { PersonGraph } from "@/components/expediente/person-graph";
 
 export function generateStaticParams() {
   return persons.map((p) => ({ personId: p.id }));
@@ -31,20 +33,11 @@ export default async function PersonDetailPage({
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       {/* Breadcrumb */}
-      <div className="mb-8 font-typewriter text-xs uppercase tracking-[0.15em] text-muted-foreground">
-        <Link href="/expediente" className="hover:text-amber transition-colors">
-          Expediente
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <Link
-          href="/expediente/personas"
-          className="hover:text-amber transition-colors"
-        >
-          Personas
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <span className="text-foreground">{person.displayName}</span>
-      </div>
+      <Breadcrumb items={[
+        { label: "Expediente", href: "/expediente" },
+        { label: "Personas", href: "/expediente/personas" },
+        { label: person.displayName },
+      ]} />
 
       {/* Header card */}
       <div className="document-card paper-texture mb-8 rounded-sm border border-border/50 bg-card p-8">
@@ -150,6 +143,17 @@ export default async function PersonDetailPage({
               </Link>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Connection graph */}
+      {person.connections.length > 0 && (
+        <div className="mb-8">
+          <h2 className="mb-4 flex items-center gap-2 font-typewriter text-xs font-bold uppercase tracking-[0.15em] text-amber">
+            <Link2 size={14} />
+            Red de conexiones
+          </h2>
+          <PersonGraph person={person} />
         </div>
       )}
 

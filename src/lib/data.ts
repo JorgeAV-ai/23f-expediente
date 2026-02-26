@@ -3,6 +3,7 @@ import personsData from "@/data/persons.json";
 import eventsData from "@/data/events.json";
 import locationsData from "@/data/locations.json";
 import annotationsData from "@/data/annotations.json";
+import communicationsData from "@/data/communications.json";
 
 import type {
   Document,
@@ -10,6 +11,7 @@ import type {
   TimelineEvent,
   Location,
   Annotation,
+  Communication,
 } from "@/types";
 
 export const documents: Document[] = documentsData as Document[];
@@ -17,6 +19,11 @@ export const persons: Person[] = personsData as Person[];
 export const events: TimelineEvent[] = eventsData as TimelineEvent[];
 export const locations: Location[] = locationsData as Location[];
 export const annotations: Annotation[] = annotationsData as Annotation[];
+export const communications: Communication[] = communicationsData as Communication[];
+
+export function getCommunication(id: string): Communication | undefined {
+  return communications.find((c) => c.id === id);
+}
 
 export function getDocument(id: string): Document | undefined {
   return documents.find((d) => d.id === id);
@@ -99,5 +106,22 @@ export function getAnnotationsByPerson(personId: string): Annotation[] {
 
 export function getAnnotationCount(targetId: string): number {
   return annotations.filter((a) => a.targetId === targetId).length;
+}
+
+export function getEventsByDocument(docId: string): TimelineEvent[] {
+  const doc = getDocument(docId);
+  if (!doc || !doc.eventsReferenced) return [];
+  return events.filter((e) => doc.eventsReferenced.includes(e.id));
+}
+
+export function getDocumentNeighbors(docId: string): {
+  prev: Document | null;
+  next: Document | null;
+} {
+  const idx = documents.findIndex((d) => d.id === docId);
+  return {
+    prev: idx > 0 ? documents[idx - 1] : null,
+    next: idx < documents.length - 1 ? documents[idx + 1] : null,
+  };
 }
 

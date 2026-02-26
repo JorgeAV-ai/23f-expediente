@@ -12,6 +12,7 @@ interface DocumentViewerProps {
   extractedText: ExtractedText | null;
   pageCount: number;
   annotationCount?: number;
+  isOcrUnverified?: boolean;
   className?: string;
 }
 
@@ -20,6 +21,7 @@ export function DocumentViewer({
   extractedText,
   pageCount,
   annotationCount = 0,
+  isOcrUnverified,
   className,
 }: DocumentViewerProps) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,6 +62,7 @@ export function DocumentViewer({
           currentPage={currentPage}
           totalPages={totalPages}
           annotationCount={annotationCount}
+          isOcrUnverified={isOcrUnverified}
           className="min-h-[70vh]"
         />
       </div>
@@ -100,6 +103,7 @@ export function DocumentViewer({
               currentPage={currentPage}
               totalPages={totalPages}
               annotationCount={annotationCount}
+              isOcrUnverified={isOcrUnverified}
               className="min-h-[60vh]"
             />
           </TabsContent>

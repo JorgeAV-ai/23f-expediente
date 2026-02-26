@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { documents, getDocument, getPersonsByDocument, getAnnotationsByDocument } from "@/lib/data";
+import { documents, getDocument, getPersonsByDocument, getAnnotationsByDocument, getEventsByDocument, getDocumentNeighbors } from "@/lib/data";
 import { getExtractedText } from "@/lib/data-server";
+import { Breadcrumb } from "@/components/shared/breadcrumb";
 import { ClassifiedBadge } from "@/components/shared/classified-badge";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -21,9 +22,13 @@ import {
   Archive,
   ImageOff,
   StickyNote,
+  Clock,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { DocumentViewerWrapper } from "@/components/document/document-viewer-wrapper";
 import { AnnotationSection } from "@/components/document/annotation-section";
+import { MarkVisited } from "@/components/expediente/mark-visited";
 import type { SourceCategory } from "@/types";
 import type { LucideIcon } from "lucide-react";
 
@@ -51,25 +56,20 @@ export default async function DocumentDetailPage({
 
   const relatedPersons = getPersonsByDocument(doc.id);
   const extractedText = getExtractedText(doc);
+  const isOcrUnverified = !doc.hasExtractedText && extractedText !== null;
   const docAnnotations = getAnnotationsByDocument(doc.id);
+  const relatedEvents = getEventsByDocument(doc.id);
+  const { prev, next } = getDocumentNeighbors(doc.id);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:py-12">
+      <MarkVisited docId={doc.id} />
       {/* Breadcrumb */}
-      <div className="mb-8 font-typewriter text-xs uppercase tracking-[0.15em] text-muted-foreground">
-        <Link href="/expediente" className="hover:text-amber transition-colors">
-          Expediente
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <Link
-          href="/expediente/documentos"
-          className="hover:text-amber transition-colors"
-        >
-          Documentos
-        </Link>
-        <span className="mx-2 text-border">›</span>
-        <span className="text-foreground">{doc.titleShort}</span>
-      </div>
+      <Breadcrumb items={[
+        { label: "Expediente", href: "/expediente" },
+        { label: "Documentos", href: "/expediente/documentos" },
+        { label: doc.titleShort },
+      ]} />
 
       {/* Document header */}
       <div className="document-card paper-texture relative mb-8 rounded-sm border border-border/50 bg-card p-5 sm:p-8">
@@ -260,6 +260,35 @@ export default async function DocumentDetailPage({
         </div>
       )}
 
+      {/* Related events */}
+      {relatedEvents.length > 0 && (
+        <div className="mb-8">
+          <h2 className="mb-4 flex items-center gap-2 font-typewriter text-xs font-bold uppercase tracking-[0.15em] text-amber">
+            <Clock size={14} />
+            Eventos relacionados ({relatedEvents.length})
+          </h2>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {relatedEvents.map((event) => (
+              <a
+                key={event.id}
+                href={`/cronologia#${event.id}`}
+                className="group flex items-center gap-3 rounded-sm border border-border/30 bg-card/50 px-4 py-3 transition-all hover:border-amber/30 hover:bg-card"
+              >
+                <Clock size={14} className="shrink-0 text-muted-foreground" />
+                <div>
+                  <span className="font-typewriter text-xs text-foreground">
+                    {event.title}
+                  </span>
+                  <span className="ml-2 font-sans text-[10px] text-muted-foreground">
+                    — {new Date(event.datetime).toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" })}
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Annotations */}
       {docAnnotations.length > 0 && (
         <AnnotationSection annotations={docAnnotations} />
@@ -271,7 +300,48 @@ export default async function DocumentDetailPage({
         extractedText={extractedText}
         pageCount={doc.pageCount}
         annotationCount={docAnnotations.length}
+        isOcrUnverified={isOcrUnverified}
       />
+
+      {/* Prev/Next navigation */}
+      <div className="mt-8 grid grid-cols-2 gap-4">
+        {prev ? (
+          <Link
+            href={`/expediente/documentos/${prev.id}`}
+            className="group flex items-center gap-3 rounded-sm border border-border/50 bg-card p-4 transition-all hover:border-amber/30"
+          >
+            <ChevronLeft size={16} className="shrink-0 text-muted-foreground transition-transform group-hover:-translate-x-1 group-hover:text-amber" />
+            <div className="min-w-0">
+              <span className="block font-typewriter text-[9px] uppercase tracking-wider text-muted-foreground">
+                Anterior
+              </span>
+              <span className="block truncate font-typewriter text-xs text-foreground">
+                {prev.titleShort}
+              </span>
+            </div>
+          </Link>
+        ) : (
+          <div />
+        )}
+        {next ? (
+          <Link
+            href={`/expediente/documentos/${next.id}`}
+            className="group flex items-center justify-end gap-3 rounded-sm border border-border/50 bg-card p-4 text-right transition-all hover:border-amber/30"
+          >
+            <div className="min-w-0">
+              <span className="block font-typewriter text-[9px] uppercase tracking-wider text-muted-foreground">
+                Siguiente
+              </span>
+              <span className="block truncate font-typewriter text-xs text-foreground">
+                {next.titleShort}
+              </span>
+            </div>
+            <ChevronRight size={16} className="shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-amber" />
+          </Link>
+        ) : (
+          <div />
+        )}
+      </div>
     </div>
   );
 }
