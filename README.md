@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Expediente 23-F
+
+Interactive educational web application about the failed Spanish coup d'etat of February 23, 1981 (23-F). Explore declassified documents, wiretap transcripts, conspirator profiles, and an hour-by-hour timeline through an FBI/spy case-file aesthetic.
+
+**[Live Demo](https://huggingface.co/spaces/JorgeAV/23f-expediente)** | **[Dataset](https://huggingface.co/datasets/JorgeAV/23f-expediente)**
+
+## Features
+
+- Document viewer with page scans and extracted text side-by-side
+- Conspirator dossiers with connections and role-based color coding
+- Wiretap transcript reader with speaker labels and annotations
+- Hour-by-hour timeline of the coup (18:23 - 06:00+1)
+- War room: interactive map of Spain + D3 network graph of conspirators
+- Full-text search across all documents (Fuse.js)
+
+## Tech Stack
+
+Next.js 15 (App Router, SSG) · TypeScript · Tailwind CSS 4 · shadcn/ui · D3-force · Leaflet · Fuse.js
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### PDF Documents
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The original PDFs are not included in the repo (too large). To download them:
 
-## Learn More
+```bash
+bash scripts/download-pdfs.sh
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Data Pipeline
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npx tsx scripts/extract-texts.ts      # Extract text from typed PDFs
+npx tsx scripts/generate-documents-json.ts  # Generate structured JSON
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── expediente/         # Case file: documents, persons, communications
+│   ├── cronologia/         # Hour-by-hour timeline
+│   └── sala-de-guerra/     # Map + network graph
+├── components/             # React components (shadcn/ui + custom)
+├── data/                   # Pre-processed JSON data
+├── lib/                    # Data loading, search, utilities
+└── types/                  # TypeScript type definitions
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Source documents are public domain (declassified Spanish government records). Code is MIT.
